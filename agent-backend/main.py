@@ -4,7 +4,6 @@ from pydantic import BaseModel
 from typing import List, Optional
 import json
 from datetime import datetime, timedelta
-import requests
 from uuid import uuid4
 from routes import router
 

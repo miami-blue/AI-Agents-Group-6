@@ -1,6 +1,6 @@
 import json
 from datetime import datetime
-from tools import tool_definitions
+from tools import tool_definitions, save_goal, get_goals
 from google import genai
 from dotenv import load_dotenv
 import os
@@ -16,7 +16,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 # Simulated current date
-CURRENT_DATE = datetime(2024, 5, 4)  # Example: May 4, 2024
+CURRENT_DATE = datetime(2025, 5, 10)  # Example: May 4, 2024
 
 message_history = []
 
@@ -38,6 +38,13 @@ async def handle_goal_agent_prompt(input: str):
             "content": input
         })
 
+        example_tool_params = {
+            "goal_name": "Downpayment for an apartment", 
+            "target_amount": 7000.0, 
+            "monthly_amount": 400.0, 
+            "due_date": "2026-11-30"
+            }
+
         prompt = f"""
         You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes.
         You should make decisions based on the user's question, conversation history, and the tools available to you.
@@ -47,12 +54,15 @@ async def handle_goal_agent_prompt(input: str):
         User's question: {input}
         Previous messages: {json.dumps(message_history)}
         Available tools: {json.dumps(tool_definitions)}
-        You should make a decision if you need to use a tool to answer the user's question.
+        You should make a decision if you need to use a tool to answer the user's question. Do not attempt to use a tool unless you have all required parameters. Partial tool calls are not allowed.
+        Any response must strictly follow one of the following three formats. Do not include extra text outside the format.
 
-        You should format your response as follows:
+        Formats:
         - If you need more information from the user, return the response in the following format: "REQUEST_INFORMATION:::question"
-        - If you want to use a tool, return the response in the following format: "USE_TOOL:::tool_name:::parameters". parameters should be a JSON object with all the parameters needed for the tool.
+        - If you want to use a tool, return the response in the following format: "USE_TOOL:::tool_name:::parameters". Make sure that the parameters in the tool call are valid JSON and enclosed as a JSON object.
         - If you want to answer the user directly, return the response in the following format: "ANSWER:::answer"
+
+        Example response of tool usage: USE_TOOL:::save_goal:::{json.dumps(example_tool_params)}
         """
 
         agent_response = client.models.generate_content(
@@ -63,6 +73,18 @@ async def handle_goal_agent_prompt(input: str):
             "content": agent_response.text
         })
 
+        # Check if the response contains USE_TOOL
+        if "USE_TOOL:::" in agent_response.text:
+            tool_response = await handle_tool_usage(agent_response.text)
+            
+            message_history.append({
+                "role": "system",
+                "content": tool_response
+            })
+
+            return {
+                "content": f"Agent reasoning: {agent_response.text} - Tool response: {tool_response}"
+            }
 
         return {
             "content": agent_response.text
@@ -72,4 +94,29 @@ async def handle_goal_agent_prompt(input: str):
             "content": f"An error occurred: {str(e)}"
         }
 
-   
+
+
+async def handle_tool_usage(response: str):
+    try:
+        # Parse the tool name and parameters from the response
+        response_parts = response.split("USE_TOOL:::", 1)
+        if len(response_parts) != 2:
+            raise ValueError("Invalid tool usage response format")
+        tool_name_and_params = response_parts[1]
+        tool_name, parameters = tool_name_and_params.split(":::", 1)
+        parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
+
+        # Dynamically call the corresponding tool function
+        if tool_name == "save_goal":
+            result = save_goal(parameters)  # Call the save_goal function with validated parameters
+        elif tool_name == "get_goals":
+            result = get_goals()
+        else:
+            return f"Unknown tool: {tool_name}"
+
+        # Return the result of the tool execution
+        return f"Tool '{tool_name}' executed successfully. Result: {json.dumps(result)}"
+        
+    except Exception as e:
+        return f"An error occurred while using the tool: {str(e)}"
+        
