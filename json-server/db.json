@@ -1,0 +1,7028 @@
+{
+    "budget": [
+      { "category": "Transport", "amount": 100 },
+      { "category": "Home Improvements", "amount": 80 },
+      { "category": "Health & Beauty", "amount": 50 },
+      { "category": "Leisure", "amount": 200 },
+      { "category": "Food & Drinks", "amount": 500 },
+      { "category": "Shopping", "amount": 70 },
+      { "category": "Income", "amount": 1500 },
+      { "category": "Household & Services", "amount": 50 },
+      { "category": "Other", "amount": 200 }
+    ],
+    "goals": [
+      {
+        "name": "Buy a house",
+        "type": "long-term",
+        "description": "I want to save money for a house buy 2028.",
+        "target_amount": 20000,
+        "deadline": "2028-12-31"
+      }
+      ],
+    "userinfo": {
+      "description": "In November, my income will be 1500 euros. In December, I'm planning a 5-day trip to Paris, and for that I need to save extra money in November."
+    },
+    "transactions": [
+      {
+        "Date": "2024-01-01",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -13.63,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-01-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -239.88,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-01-01",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -83.16,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-01-02",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -15.17,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-01-03",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -28.01,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-01-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -16.48,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-01-04",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -97.09,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-01-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -27.58,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-01-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -283.85,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-01-04",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -97.59,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-01-05",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-01-06",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -134.9,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-01-06",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -120.56,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-01-06",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -52.5,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-01-08",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -87.59,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-01-08",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -17.05,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-01-09",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -60.64,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-01-09",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -61.42,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-01-09",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -60.06,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-01-10",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -34.56,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-01-10",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -182.55,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-01-10",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -188.32,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-01-10",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -69.12,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-01-11",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -109.92,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-01-11",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -59.12,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-01-12",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -75.96,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-01-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -251.72,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-01-13",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -86.84,
+        "Seller": "Red Cross"
+      },
+      {
+        "Date": "2024-01-13",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -187.8,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-01-13",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -94.04,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-01-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -90.04,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-01-14",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -109.73,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-01-15",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -86.34,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-01-15",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -69.84,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-01-15",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -37.05,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-01-15",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -9.82,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-01-15",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -52.49,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-01-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -39.05,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-01-16",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -37.99,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-01-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -93.68,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-01-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -14.53,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-01-18",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -24.32,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-01-18",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -82.42,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-01-18",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -83.4,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-01-19",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -125.97,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-01-19",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -59.08,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-01-19",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -94.01,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-01-19",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -39.0,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-01-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -34.06,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-01-20",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -71.07,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-01-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -42.36,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-01-21",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -66.83,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-01-21",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -251.51,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-01-21",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -209.17,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-01-22",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -77.08,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-01-22",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -217.17,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-01-23",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -167.51,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-01-24",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -20.43,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-01-25",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -86.67,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-01-26",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -31.97,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-01-26",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -41.79,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-01-26",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -7.85,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-01-26",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -88.68,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-01-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -19.02,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-01-27",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -63.61,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-01-28",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -80.89,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-01-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -28.45,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-01-30",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -27.21,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-01-31",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -88.99,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-01-31",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -89.33,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-01-31",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -112.78,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-01-31",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -54.83,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-01-31",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -24.59,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-02-01",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -51.69,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-02-01",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-02-01",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -60.94,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -108.46,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -63.79,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -89.26,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -117.89,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-02-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -28.96,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-02-04",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -13.63,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-02-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -16.63,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-02-04",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -30.04,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-02-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -16.59,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-02-05",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-02-05",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -31.6,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-02-06",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -130.52,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-02-07",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -8.85,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-02-07",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -63.64,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-02-08",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -25.7,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-02-08",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -27.34,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-02-08",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -72.22,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-02-09",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -89.78,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-02-09",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -47.21,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-02-09",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -20.88,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-02-10",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -130.18,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-02-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -147.66,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-02-11",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -5.49,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-02-11",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -165.04,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-02-11",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -10.05,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-02-12",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -80.86,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-02-12",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -13.17,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-02-13",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -92.81,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-02-13",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -22.74,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-02-14",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -49.22,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-02-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -47.57,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-02-14",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -41.43,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-02-14",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -17.22,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-02-15",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -110.34,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-02-15",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -89.75,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-02-15",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -131.16,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-02-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -51.57,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-02-16",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -123.65,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-02-18",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -184.67,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-02-18",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -30.71,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-02-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -17.84,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-02-20",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -87.21,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-02-20",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -90.48,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-02-20",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -69.57,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-02-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -23.15,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-02-21",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -56.87,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-02-21",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -37.11,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-02-22",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -103.9,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-02-23",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -136.73,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-02-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -11.85,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-02-24",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -146.06,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -99.57,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -18.01,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -264.37,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -68.34,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-02-25",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -124.5,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-02-26",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -39.76,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-02-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -77.85,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-02-27",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -159.84,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-02-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -219.17,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-02-29",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -37.81,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-03-01",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -26.9,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-03-01",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -120.87,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -9.78,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -150.27,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -59.19,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -184.9,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-03-02",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -101.42,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-03-03",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -13.52,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-03-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -62.32,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-03-04",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -42.45,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-03-05",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -37.71,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-03-05",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -63.9,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-03-06",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -79.14,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-03-07",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -67.22,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-07",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -39.2,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-03-07",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -64.37,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-03-09",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -82.71,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-03-09",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-03-09",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -79.72,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-03-09",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -97.26,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-03-10",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -17.0,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-03-11",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -148.82,
+        "Seller": "Red Cross"
+      },
+      {
+        "Date": "2024-03-11",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -69.86,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-03-11",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -31.54,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-03-11",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -186.61,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-03-12",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -126.82,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-03-12",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -26.36,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-03-12",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -21.59,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-03-12",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -109.19,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-03-12",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -65.97,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-03-13",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -53.34,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-13",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -71.33,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-13",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -97.55,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-03-14",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -69.96,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-03-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -87.44,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-03-14",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -148.77,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-03-14",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -46.2,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-03-14",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -28.62,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-03-15",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -140.01,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-03-15",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -128.0,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-03-16",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -28.64,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-03-16",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -41.75,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-03-16",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -156.27,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-03-16",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -26.74,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-03-17",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -92.72,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-03-17",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -80.01,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-03-17",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -66.95,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-03-17",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -52.62,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-03-17",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -131.49,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-03-18",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -10.38,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-03-18",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -105.86,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-03-18",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -251.13,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -53.04,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -286.59,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -91.49,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -42.23,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -193.3,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-03-19",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -24.16,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-03-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -24.97,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-03-21",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -161.37,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-03-21",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -125.84,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-03-21",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -74.64,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-03-22",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -96.14,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-03-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -21.65,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-03-22",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -123.75,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-03-23",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -114.71,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-03-24",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -130.27,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-03-24",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -34.91,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-03-24",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -66.42,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-03-24",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -75.23,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-03-24",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -90.12,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-03-25",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -211.19,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-03-26",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -20.79,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-03-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -291.2,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-03-26",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -79.72,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-03-27",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -80.82,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-03-27",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -20.83,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-03-28",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -111.43,
+        "Seller": "Unicef"
+      },
+      {
+        "Date": "2024-03-28",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -24.22,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-03-30",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -34.67,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-03-31",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -37.87,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-03-31",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -17.07,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-04-01",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -105.58,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-04-02",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -89.82,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-04-02",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -45.59,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-04-03",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -186.67,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-04-03",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -27.19,
+        "Seller": "Unicef"
+      },
+      {
+        "Date": "2024-04-03",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -23.19,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-04-04",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -129.01,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-04-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -244.69,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-04-05",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-04-05",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -97.51,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-04-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -32.42,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-04-06",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -89.08,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-04-06",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -73.99,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-04-06",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -44.9,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-04-07",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -116.51,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-04-07",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -13.56,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-04-08",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -84.06,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-04-08",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -27.3,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-04-08",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -16.68,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-04-09",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -190.0,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-04-09",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -132.88,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-04-09",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -45.98,
+        "Seller": "Adobe"
+      },
+      {
+        "Date": "2024-04-09",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-04-10",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -51.38,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-04-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -220.29,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-04-10",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -80.67,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-04-10",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -64.71,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-04-11",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -27.99,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-04-12",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -66.71,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-04-12",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -184.11,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-04-12",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -83.8,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-04-12",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -83.82,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-04-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -199.09,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-04-13",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -20.34,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-04-14",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -78.05,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-04-15",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -5.66,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-04-16",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -130.13,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -8.57,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -73.79,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -34.71,
+        "Seller": "Adobe"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -144.87,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -246.59,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-04-17",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -13.12,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-04-18",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -18.07,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-04-18",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -85.51,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-04-19",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -85.36,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-04-19",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -194.82,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-04-19",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -90.06,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-04-19",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -83.75,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-04-19",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -28.5,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-04-20",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -106.91,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-04-20",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -93.78,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-04-20",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -69.21,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-04-21",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -31.56,
+        "Seller": "Adobe"
+      },
+      {
+        "Date": "2024-04-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -33.75,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-04-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -63.69,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-04-23",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -192.12,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-04-24",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -285.81,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-04-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -17.37,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-04-25",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -59.03,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -149.93,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -76.77,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -20.92,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -98.01,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -53.82,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-04-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -98.22,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-04-27",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -21.98,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-04-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -73.88,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-04-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -36.45,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-04-28",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -119.03,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-04-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -113.57,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-04-29",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -41.81,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-04-29",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -57.14,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-04-30",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -228.82,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-04-30",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -77.02,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-04-30",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -35.22,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-04-30",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -142.75,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-05-01",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -78.85,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-05-01",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -194.51,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-05-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -11.19,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-05-02",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -59.06,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-05-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -19.37,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-05-02",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-05-03",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -11.31,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-05-03",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -30.67,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-05-03",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -48.6,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-05-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -244.29,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-05-06",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -84.52,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-05-07",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -60.19,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -78.68,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -60.9,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -22.72,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -97.53,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -165.43,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-05-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -19.19,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-05-10",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -25.09,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-05-11",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -45.45,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-05-11",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -24.07,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-05-11",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -70.47,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-05-12",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -188.72,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-05-12",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -79.03,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-05-13",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -65.88,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-05-13",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -86.79,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-05-13",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-05-13",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -38.96,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-05-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -297.83,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-05-14",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -67.38,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-05-14",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -45.65,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-05-14",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -26.88,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-05-15",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -27.31,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-05-15",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -136.63,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-05-16",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -71.02,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-05-16",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -95.79,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-05-16",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -134.36,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-05-17",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -24.43,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-05-17",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -128.31,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-05-18",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -20.3,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-05-18",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -30.56,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-05-19",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -165.68,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-05-19",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -13.06,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-05-19",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -56.08,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-05-19",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -32.09,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-05-20",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -78.65,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-05-20",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -230.81,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-05-21",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -107.94,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-05-21",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -98.44,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-05-22",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -152.48,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-05-22",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -112.92,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-05-22",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -48.14,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-05-23",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -15.23,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-05-23",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -58.84,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-05-24",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -58.98,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-05-24",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -90.69,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-05-25",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -48.46,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-05-26",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -139.01,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-05-26",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -152.59,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -23.95,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -13.72,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -68.19,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -33.88,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -25.16,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-05-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -18.43,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-05-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -61.16,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-05-28",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -59.5,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-05-29",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -61.01,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-05-29",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -95.8,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-05-29",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -70.94,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-05-30",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -86.87,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-05-31",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -190.21,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-05-31",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -78.04,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-05-31",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -91.34,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Income",
+        "Subcategory": "Summer Job",
+        "Amount": 3000.0,
+        "Seller": "Tech Internship at Nokia"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -55.35,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -11.6,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -269.88,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-06-01",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -53.36,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-06-02",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -78.0,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -86.24,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -82.85,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -164.77,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -139.34,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -37.26,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-06-03",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -113.01,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-06-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -28.78,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-06-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -5.72,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-06-05",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -180.29,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-06-05",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -68.22,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-06-06",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -73.14,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-06-06",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -122.64,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-06-07",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -42.48,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-06-07",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -189.17,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-06-08",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -17.52,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-06-08",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-06-08",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -86.34,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-06-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -8.23,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-06-09",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -80.17,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-06-10",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -10.05,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-06-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -181.01,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-06-10",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -24.02,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-06-10",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -48.24,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-06-11",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -24.54,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-06-11",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -201.56,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-06-12",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -28.67,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-06-13",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -88.55,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-06-13",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -34.22,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-06-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -119.88,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -266.81,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -72.98,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -102.34,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -9.35,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -89.16,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -39.71,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -74.57,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-06-14",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -64.81,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-06-15",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -36.16,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-06-16",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -23.84,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-06-16",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -21.09,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-06-16",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -133.98,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-06-17",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -52.01,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-06-17",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -156.0,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-06-18",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -77.49,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-06-18",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -47.2,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-06-18",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -15.35,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-06-18",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -237.71,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-06-19",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -8.96,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-06-19",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -68.32,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-06-20",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -89.05,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-06-20",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -55.72,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-06-21",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -30.51,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-06-22",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -56.79,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-06-22",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -18.46,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-06-23",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -195.91,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-06-23",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -52.48,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-06-24",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -18.39,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-06-26",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -70.51,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-06-26",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -154.84,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-06-27",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -57.64,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-06-27",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -123.69,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-06-27",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -51.07,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-06-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -12.82,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-06-28",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -63.61,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-06-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -266.05,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-06-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -167.57,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-06-29",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -11.45,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-06-30",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -194.41,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-06-30",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -19.43,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-06-30",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -114.32,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -193.19,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -82.47,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -121.47,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -92.69,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -61.96,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-07-01",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -71.55,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-07-02",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -24.36,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-07-02",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -32.04,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-07-02",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -84.88,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-07-02",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -79.89,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-07-03",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -134.66,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-07-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -25.91,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-07-04",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -98.86,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-07-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -255.81,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-07-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -81.27,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -67.02,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -80.77,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Income",
+        "Subcategory": "Summer Job",
+        "Amount": 3000.0,
+        "Seller": "Tech Internship at Nokia"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -86.75,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -85.54,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-07-05",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -11.13,
+        "Seller": "Red Cross"
+      },
+      {
+        "Date": "2024-07-06",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -148.04,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-07-06",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -78.92,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-07-06",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -40.6,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-07-06",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -25.52,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-07-07",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -110.68,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-07-08",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -99.88,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-07-09",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -227.18,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-07-09",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -58.33,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-07-10",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -8.04,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-07-10",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -92.27,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-07-10",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -47.32,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-07-10",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -103.18,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-07-11",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -19.22,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-07-11",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -94.54,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-07-11",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -106.86,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-07-11",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -31.92,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-07-11",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -55.13,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-07-12",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -24.45,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-07-12",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -24.36,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-07-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -68.91,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-07-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -208.33,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-07-13",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -185.51,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-07-15",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -163.99,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-07-15",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -40.01,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-07-15",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -291.36,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-07-15",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -80.29,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-07-16",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -57.97,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-07-17",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -74.7,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-07-17",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -27.87,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-07-18",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -149.6,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-07-19",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -195.37,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-07-20",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -34.79,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-07-20",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -51.37,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-07-21",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -64.12,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-07-21",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -191.1,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-07-21",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -112.33,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-07-21",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -93.42,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-07-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -32.01,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-07-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -30.35,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-07-23",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -298.27,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-07-24",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -134.6,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-07-24",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -114.58,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-07-24",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -102.68,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-07-24",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -213.3,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-07-25",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -20.06,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-07-25",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -88.93,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-07-25",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -28.87,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-07-25",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -13.78,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-07-26",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -124.52,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-07-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -17.92,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-07-27",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -21.67,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-07-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -20.66,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-07-27",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -75.06,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-07-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -225.65,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-07-28",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -95.8,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-07-28",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -191.34,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-07-28",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -37.53,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-07-29",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -48.47,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-07-29",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -233.18,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-07-29",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -14.07,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-07-29",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -125.86,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-07-30",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -18.8,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-07-30",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -128.4,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-07-30",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -177.99,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -31.57,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -29.45,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -12.19,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -152.64,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -66.32,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-07-31",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -271.75,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-08-01",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -52.76,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-08-01",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -149.87,
+        "Seller": "Adobe"
+      },
+      {
+        "Date": "2024-08-02",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -6.67,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-08-02",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -179.14,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-08-02",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -66.14,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-08-03",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-08-03",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -172.21,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-08-03",
+        "Category": "Income",
+        "Subcategory": "Summer Job",
+        "Amount": 3000.0,
+        "Seller": "Tech Internship at Nokia"
+      },
+      {
+        "Date": "2024-08-03",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -183.53,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-08-03",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -140.56,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-08-04",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -93.92,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-08-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -73.61,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-08-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -86.1,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-08-05",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -45.53,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-08-05",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -174.2,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-08-06",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -38.18,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-08-06",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -181.28,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-08-08",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -31.04,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-08-08",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -69.58,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-08-09",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-08-09",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -31.77,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-08-09",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -57.36,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-08-10",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -131.21,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-08-10",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -146.85,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-08-10",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -197.3,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-08-10",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -29.11,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-08-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -197.58,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-08-11",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -184.94,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-08-11",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -58.08,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-08-11",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -88.44,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-08-11",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -20.56,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-08-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -92.31,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-08-13",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -187.08,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-08-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -142.72,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-08-13",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -26.89,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-08-13",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -25.55,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-08-13",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -79.07,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-08-15",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -135.01,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-08-15",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -14.05,
+        "Seller": "Unicef"
+      },
+      {
+        "Date": "2024-08-15",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -23.1,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-08-15",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-08-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -40.33,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-08-17",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -193.25,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-08-18",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -84.98,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-08-18",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -32.46,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-08-18",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -34.51,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-08-20",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -63.57,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-08-20",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -34.8,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-08-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -20.62,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-08-21",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -148.97,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-08-22",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -80.01,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-08-22",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -50.84,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-08-22",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -34.89,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-08-22",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -15.08,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-08-22",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -73.12,
+        "Seller": "Google Workspace"
+      },
+      {
+        "Date": "2024-08-23",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -68.84,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-08-23",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -43.82,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-08-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -6.53,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-08-24",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-08-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -8.62,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-08-25",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -127.68,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-08-25",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -19.21,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-08-26",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -130.27,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-08-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -216.43,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-08-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -294.85,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-08-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -218.54,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -178.97,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -39.74,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -88.27,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -119.96,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -108.45,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -89.99,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-08-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -6.65,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-08-28",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -96.17,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-08-28",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -82.3,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-08-29",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -74.04,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-08-29",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -196.85,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-08-29",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -43.63,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-08-30",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -129.26,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-08-30",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -83.63,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-08-31",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -27.2,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-08-31",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -296.75,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-08-31",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -103.33,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-08-31",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -198.85,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-01",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -74.57,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-01",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -70.66,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-09-01",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -21.06,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-09-01",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -47.18,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-09-02",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -102.89,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-09-03",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -34.26,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-09-03",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -88.02,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-09-03",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -44.06,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-09-04",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -104.75,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-09-04",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -66.43,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-09-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -8.06,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-09-04",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -91.34,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -282.18,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -91.49,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -77.49,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -42.19,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-09-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -71.2,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-09-06",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -65.29,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-06",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -281.72,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-06",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -13.86,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-09-06",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -168.53,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-09-07",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -81.62,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-09-07",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -118.63,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-09-08",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -21.49,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-09-08",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -97.56,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-09-08",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -66.29,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -19.31,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -145.54,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -71.39,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -81.32,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -18.26,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -243.72,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -62.63,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-09-09",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -36.94,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-09-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -133.03,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-10",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -59.88,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-09-11",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -45.24,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-11",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -195.22,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-09-11",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -192.2,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-09-11",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -37.66,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-09-12",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -18.06,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-09-12",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -75.61,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-09-13",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -177.22,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-09-13",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -43.59,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-09-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -73.42,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-09-13",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -120.65,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-09-14",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -198.19,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-09-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -83.7,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-09-15",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -90.78,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -77.39,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -242.12,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Other",
+        "Subcategory": "Business Expenses",
+        "Amount": -180.98,
+        "Seller": "Adobe"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -68.73,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -41.67,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-09-17",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -27.31,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-09-18",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -77.8,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-09-18",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -71.47,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-09-18",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -59.67,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-09-19",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -56.57,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -159.4,
+        "Seller": "Intersport"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -151.91,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -64.92,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -82.58,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -129.05,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -21.53,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-20",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -194.16,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-09-21",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -75.25,
+        "Seller": "Fressi"
+      },
+      {
+        "Date": "2024-09-21",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -155.08,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-09-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -21.3,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-09-22",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -13.98,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-09-22",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -27.2,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-09-23",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -56.25,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-09-23",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -69.07,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-09-24",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -77.41,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-09-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -24.57,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-09-24",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -91.86,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-09-24",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -68.96,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-09-24",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -15.43,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-25",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -83.84,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-09-26",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -92.83,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-09-26",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -87.97,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-09-27",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -10.83,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-09-27",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -11.85,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-09-27",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -49.78,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-09-27",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -126.55,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-09-27",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -7.63,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-09-28",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -81.67,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-09-28",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -25.65,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-09-28",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -58.55,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-09-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -85.72,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-09-29",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -75.29,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-09-29",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -54.16,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-29",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -286.36,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-09-29",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -99.7,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-09-30",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -20.69,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-09-30",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -36.25,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-10-01",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -76.1,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-10-01",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -151.78,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-10-01",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -94.04,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-10-01",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -32.2,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-10-02",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -53.29,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-10-02",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -181.72,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-10-02",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -179.14,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-10-03",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -87.02,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-10-03",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-10-03",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -72.44,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-10-03",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -99.73,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-10-03",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -7.89,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -42.59,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -12.72,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -82.8,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -6.38,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -130.22,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-10-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -185.26,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-10-05",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -48.92,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-10-05",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -81.73,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-10-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -86.88,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-10-06",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -96.86,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-10-06",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -55.3,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-10-07",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -64.03,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-10-08",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -189.19,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-10-08",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -98.58,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-10-08",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -57.38,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -44.5,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -13.78,
+        "Seller": "Steam Helsinki"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -79.31,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -10.15,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-10-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -19.45,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-10-10",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -137.76,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-10-10",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -32.24,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-10-10",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -20.16,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-10-10",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -117.15,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-10-10",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -56.4,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-10-11",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -199.0,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-10-11",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -100.33,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-10-11",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -29.14,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-10-12",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -24.35,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-10-12",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -5.84,
+        "Seller": "Nordea ATM"
+      },
+      {
+        "Date": "2024-10-12",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -52.43,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-10-12",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -75.2,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -117.82,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -40.93,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -145.55,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -130.29,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -80.17,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -15.88,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -33.57,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -31.59,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-10-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -18.12,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-10-15",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -129.14,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-10-15",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -74.57,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-10-15",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -263.26,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-10-16",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -158.37,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-10-16",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -43.39,
+        "Seller": "Fixura"
+      },
+      {
+        "Date": "2024-10-16",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -35.7,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-10-16",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -73.95,
+        "Seller": "Instrumentarium"
+      },
+      {
+        "Date": "2024-10-17",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -77.52,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-10-17",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -171.88,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-10-18",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -79.15,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-10-18",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -121.1,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-10-19",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -15.16,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-10-19",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-10-20",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -37.49,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-10-21",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -83.32,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-10-21",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -94.22,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-10-21",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -75.13,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-10-21",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -63.79,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -76.23,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -56.55,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Shopping",
+        "Subcategory": "Hobby & Sports Equipment",
+        "Amount": -143.35,
+        "Seller": "Stadium"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -137.97,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -151.15,
+        "Seller": "H&M"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -18.28,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -32.53,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-10-23",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -23.54,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-10-24",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -115.22,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-10-24",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -107.88,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-10-24",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -193.85,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-10-24",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -210.8,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-10-26",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -11.68,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-10-26",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -39.84,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-10-26",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -68.82,
+        "Seller": "Udemy"
+      },
+      {
+        "Date": "2024-10-26",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -98.02,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-10-26",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -25.04,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-10-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -23.93,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-10-27",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -149.14,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-10-27",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -175.43,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-10-27",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -48.99,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-10-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -33.69,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-10-28",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -24.61,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-10-28",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -39.13,
+        "Seller": "Airbnb"
+      },
+      {
+        "Date": "2024-10-29",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -20.09,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-10-29",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -64.9,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-10-30",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -35.28,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-10-30",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -28.1,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-10-31",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -135.63,
+        "Seller": "Zara"
+      },
+      {
+        "Date": "2024-11-01",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -167.73,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-11-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -98.07,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-11-02",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -35.78,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-11-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -97.99,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-11-02",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-11-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -32.6,
+        "Seller": "K-Market"
+      },
+      {
+        "Date": "2024-11-02",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -165.01,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-11-03",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -269.56,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-11-03",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -178.89,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-11-04",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -270.35,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-11-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -44.06,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-11-04",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -92.41,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-11-05",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-11-05",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -10.35,
+        "Seller": "DNA"
+      },
+      {
+        "Date": "2024-11-06",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -91.7,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-11-07",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -74.79,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-11-07",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -102.34,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-11-07",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -73.04,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-11-08",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -71.16,
+        "Seller": "Kicks"
+      },
+      {
+        "Date": "2024-11-08",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -62.5,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-11-08",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -41.56,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-11-08",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-11-09",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -91.67,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-11-09",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -82.67,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-11-10",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -25.79,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-11-10",
+        "Category": "Other",
+        "Subcategory": "Cash Withdrawals",
+        "Amount": -95.96,
+        "Seller": "ATM Helsinki"
+      },
+      {
+        "Date": "2024-11-11",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -75.1,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-11-11",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -7.93,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-11-12",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -101.6,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-11-12",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -21.17,
+        "Seller": "Wolt"
+      },
+      {
+        "Date": "2024-11-13",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -62.29,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-11-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -264.89,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-11-13",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -19.33,
+        "Seller": "Red Cross"
+      },
+      {
+        "Date": "2024-11-13",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -218.47,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-11-13",
+        "Category": "Other",
+        "Subcategory": "Education",
+        "Amount": -156.55,
+        "Seller": "LinkedIn Learning"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -31.85,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -107.76,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -98.12,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -80.95,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -77.99,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-11-14",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -136.05,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-11-15",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -70.97,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-11-16",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -171.23,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-11-16",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -188.5,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-11-17",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -80.12,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-11-17",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -192.94,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-11-17",
+        "Category": "Shopping",
+        "Subcategory": "Clothes & Accessories",
+        "Amount": -195.99,
+        "Seller": "Uniqlo"
+      },
+      {
+        "Date": "2024-11-18",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -146.7,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-11-18",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -91.19,
+        "Seller": "VR"
+      },
+      {
+        "Date": "2024-11-18",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -43.74,
+        "Seller": "Red Cross"
+      },
+      {
+        "Date": "2024-11-18",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -29.09,
+        "Seller": "ABC"
+      },
+      {
+        "Date": "2024-11-19",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -97.21,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-11-19",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -102.98,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-11-19",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -134.14,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-11-20",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -85.38,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-11-20",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-11-20",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -133.95,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -50.18,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -44.73,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -7.31,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -83.95,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -5.31,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -141.4,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-11-21",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -145.81,
+        "Seller": "MusicStore"
+      },
+      {
+        "Date": "2024-11-22",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -58.84,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-11-22",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -47.21,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-11-23",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -35.46,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-11-23",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -76.83,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-11-23",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -134.73,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-11-24",
+        "Category": "Other",
+        "Subcategory": "Charity",
+        "Amount": -185.56,
+        "Seller": "Unicef"
+      },
+      {
+        "Date": "2024-11-24",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-11-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -21.11,
+        "Seller": "Kotipizza"
+      },
+      {
+        "Date": "2024-11-24",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -10.64,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-11-25",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -76.94,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-11-25",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -21.18,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-11-25",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -26.79,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-11-25",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -51.79,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-11-26",
+        "Category": "Household & Services",
+        "Subcategory": "Services",
+        "Amount": -48.49,
+        "Seller": "Pikahuolto"
+      },
+      {
+        "Date": "2024-11-26",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -112.06,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-11-26",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -26.24,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-11-27",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -190.08,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-11-27",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -73.01,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-11-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -82.86,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-11-28",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -54.06,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-11-28",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -75.28,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-11-29",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -45.23,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-11-29",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -139.61,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-11-29",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -16.36,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-11-30",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -109.66,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-11-30",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -13.65,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-11-30",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -79.24,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-11-30",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -82.15,
+        "Seller": "Elisa"
+      },
+      {
+        "Date": "2024-12-01",
+        "Category": "Income",
+        "Subcategory": "Student Job",
+        "Amount": 1500.0,
+        "Seller": "University Research Job"
+      },
+      {
+        "Date": "2024-12-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -95.08,
+        "Seller": "JYSK"
+      },
+      {
+        "Date": "2024-12-01",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -254.65,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-12-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -23.08,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-02",
+        "Category": "Other",
+        "Subcategory": "Pets",
+        "Amount": -81.14,
+        "Seller": "PetStore"
+      },
+      {
+        "Date": "2024-12-02",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -134.47,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-12-02",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -60.64,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-12-03",
+        "Category": "Household & Services",
+        "Subcategory": "Insurance & Fees",
+        "Amount": -96.72,
+        "Seller": "If Vakuutus"
+      },
+      {
+        "Date": "2024-12-03",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -21.91,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-12-04",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -78.32,
+        "Seller": "Lidl"
+      },
+      {
+        "Date": "2024-12-04",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -48.36,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-12-05",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -85.26,
+        "Seller": "Gigantti"
+      },
+      {
+        "Date": "2024-12-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -96.49,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-12-05",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -11.22,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-12-06",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -145.44,
+        "Seller": "Finnkino"
+      },
+      {
+        "Date": "2024-12-06",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -105.48,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-12-06",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -77.34,
+        "Seller": "Suomalainen Kirjakauppa"
+      },
+      {
+        "Date": "2024-12-07",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -57.08,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-12-07",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -10.92,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-07",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -69.59,
+        "Seller": "Salon Lux"
+      },
+      {
+        "Date": "2024-12-09",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -13.5,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-09",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -90.52,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-12-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Furniture & Interior",
+        "Amount": -182.32,
+        "Seller": "IKEA"
+      },
+      {
+        "Date": "2024-12-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -232.48,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-12-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -179.72,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-12-10",
+        "Category": "Home Improvements",
+        "Subcategory": "Renovation & Repairs",
+        "Amount": -76.14,
+        "Seller": "Bauhaus"
+      },
+      {
+        "Date": "2024-12-10",
+        "Category": "Household & Services",
+        "Subcategory": "Mortgage & Interest",
+        "Amount": -11.34,
+        "Seller": "OP Bank"
+      },
+      {
+        "Date": "2024-12-11",
+        "Category": "Health & Beauty",
+        "Subcategory": "Eyecare",
+        "Amount": -56.61,
+        "Seller": "Specsavers"
+      },
+      {
+        "Date": "2024-12-11",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -35.95,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-12-11",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -96.36,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-12-11",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -52.43,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-12-11",
+        "Category": "Other",
+        "Subcategory": "Uncategorized",
+        "Amount": -145.49,
+        "Seller": "Misc Expense"
+      },
+      {
+        "Date": "2024-12-12",
+        "Category": "Leisure",
+        "Subcategory": "Sports & Fitness",
+        "Amount": -49.94,
+        "Seller": "Unisport"
+      },
+      {
+        "Date": "2024-12-14",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -26.11,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-15",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -33.48,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-12-15",
+        "Category": "Household & Services",
+        "Subcategory": "Utilities",
+        "Amount": -20.2,
+        "Seller": "Helsingin Energia"
+      },
+      {
+        "Date": "2024-12-16",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -65.14,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-12-17",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -27.57,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-12-17",
+        "Category": "Health & Beauty",
+        "Subcategory": "Beauty",
+        "Amount": -72.81,
+        "Seller": "Hair&Beauty"
+      },
+      {
+        "Date": "2024-12-17",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -110.72,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-12-18",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -31.54,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-12-18",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -87.06,
+        "Seller": "HUS Hospital"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Leisure",
+        "Subcategory": "Vacation",
+        "Amount": -142.84,
+        "Seller": "Booking.com"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -74.6,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -25.72,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -73.42,
+        "Seller": "Clas Ohlson"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Leisure",
+        "Subcategory": "Hobbies",
+        "Amount": -104.16,
+        "Seller": "Paint & Pot"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -220.22,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -65.92,
+        "Seller": "Uber"
+      },
+      {
+        "Date": "2024-12-19",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -83.91,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-12-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -10.26,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-12-20",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -9.55,
+        "Seller": "Starbucks"
+      },
+      {
+        "Date": "2024-12-21",
+        "Category": "Food & Drinks",
+        "Subcategory": "Restaurants",
+        "Amount": -16.94,
+        "Seller": "Foodora"
+      },
+      {
+        "Date": "2024-12-21",
+        "Category": "Home Improvements",
+        "Subcategory": "Garden",
+        "Amount": -128.85,
+        "Seller": "Plantagen"
+      },
+      {
+        "Date": "2024-12-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -6.31,
+        "Seller": "Arnolds"
+      },
+      {
+        "Date": "2024-12-22",
+        "Category": "Food & Drinks",
+        "Subcategory": "Bars",
+        "Amount": -6.09,
+        "Seller": "Molly Malone's"
+      },
+      {
+        "Date": "2024-12-23",
+        "Category": "Shopping",
+        "Subcategory": "Electronics",
+        "Amount": -171.97,
+        "Seller": "Verkkokauppa"
+      },
+      {
+        "Date": "2024-12-24",
+        "Category": "Food & Drinks",
+        "Subcategory": "Groceries",
+        "Amount": -33.72,
+        "Seller": "S-Market"
+      },
+      {
+        "Date": "2024-12-25",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -78.93,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-12-25",
+        "Category": "Transport",
+        "Subcategory": "Taxi",
+        "Amount": -17.49,
+        "Seller": "Yango"
+      },
+      {
+        "Date": "2024-12-25",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -34.54,
+        "Seller": "Norwegian"
+      },
+      {
+        "Date": "2024-12-26",
+        "Category": "Transport",
+        "Subcategory": "Public Transport",
+        "Amount": -57.49,
+        "Seller": "HSL"
+      },
+      {
+        "Date": "2024-12-26",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -183.19,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-12-26",
+        "Category": "Shopping",
+        "Subcategory": "Gifts",
+        "Amount": -85.48,
+        "Seller": "Tiger"
+      },
+      {
+        "Date": "2024-12-27",
+        "Category": "Other",
+        "Subcategory": "Kids",
+        "Amount": -113.01,
+        "Seller": "Toy Planet"
+      },
+      {
+        "Date": "2024-12-27",
+        "Category": "Shopping",
+        "Subcategory": "Books & Games",
+        "Amount": -198.36,
+        "Seller": "Steam"
+      },
+      {
+        "Date": "2024-12-27",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -56.64,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-12-27",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-12-27",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -52.0,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-12-28",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -65.88,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-12-28",
+        "Category": "Food & Drinks",
+        "Subcategory": "Coffee & Snacks",
+        "Amount": -6.18,
+        "Seller": "Espresso House"
+      },
+      {
+        "Date": "2024-12-29",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -20.42,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-12-29",
+        "Category": "Health & Beauty",
+        "Subcategory": "Healthcare",
+        "Amount": -71.11,
+        "Seller": "Mehil\u00e4inen"
+      },
+      {
+        "Date": "2024-12-30",
+        "Category": "Health & Beauty",
+        "Subcategory": "Pharmacy",
+        "Amount": -87.3,
+        "Seller": "Yliopiston Apteekki"
+      },
+      {
+        "Date": "2024-12-30",
+        "Category": "Leisure",
+        "Subcategory": "Culture & Events",
+        "Amount": -147.87,
+        "Seller": "Lippu.fi"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Transport",
+        "Subcategory": "Flights",
+        "Amount": -28.98,
+        "Seller": "Finnair"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Food & Drinks",
+        "Subcategory": "Alcohol & Tobacco",
+        "Amount": -20.71,
+        "Seller": "Alko"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Household & Services",
+        "Subcategory": "Rent",
+        "Amount": -700.0,
+        "Seller": "Student Housing Foundation"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Health & Beauty",
+        "Subcategory": "Health & Beauty",
+        "Amount": -49.72,
+        "Seller": "The Body Shop"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Transport",
+        "Subcategory": "Car & Fuel",
+        "Amount": -5.45,
+        "Seller": "Shell"
+      },
+      {
+        "Date": "2024-12-31",
+        "Category": "Household & Services",
+        "Subcategory": "Media & IT",
+        "Amount": -88.41,
+        "Seller": "DNA"
+      }
+    ]
+  }
+  
