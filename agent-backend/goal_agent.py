@@ -22,13 +22,14 @@ message_history = []
 
 welcome_message = {
     "role": "system",
-    "content": "Hi! I am your personal financial coach helping you set a realistic financial goal. What would you like to achieve?"
+    "content": "Hi! I am Budgy, your personal financial coach helping you set a realistic financial goal. What would you like to achieve?"
 }
 
 async def handle_goal_agent_prompt(input: str):
     try:
         # Starting the conversation.
-        if input.strip().lower() == "start" and not message_history:
+        if input.strip().lower() == "/start":
+            message_history.clear()
             message_history.append(welcome_message)
             return {"content": welcome_message["content"]}
 
@@ -38,7 +39,7 @@ async def handle_goal_agent_prompt(input: str):
         })
 
         prompt = f"""
-        You are an AI Agent that helps users to set a realistic financial goal based on their wishes.
+        You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes.
         You should make decisions based on the user's question, conversation history, and the tools available to you.
         Here is some information for you:
 
