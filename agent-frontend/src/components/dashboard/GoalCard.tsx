@@ -3,15 +3,17 @@ import './card.css';
 
 type GoalCardProps = {
     title: string;
+    emoji: string;
     targetDate: string;
     progress: number;
 };
 
-const GoalCard: React.FC<GoalCardProps> = ({ title, targetDate, progress, imageUrl }) => {
+const GoalCard: React.FC<GoalCardProps> = ({ title, emoji, targetDate, progress, }) => {
     return (
-        <div className= "goal-card" >
-        <div className="goal-tag" > My final goal < /div>
-            < h1 className = "goal-image" > 🏡 </h1>
+        <div className= "card" >
+        <div className="goal-tag" > My dream < /div>
+            < h1 className = "goal-image" >
+                { emoji } < /h1>
                 < h2 className = "goal-title" > { title } < /h2>
                     < div className = "progress-section" >
                         <div className="progress-bar" >

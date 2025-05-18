@@ -1,0 +1,11 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.small-card {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
