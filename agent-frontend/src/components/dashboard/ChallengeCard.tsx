@@ -10,7 +10,7 @@ const ChallengeCard: React.FC<ChallengeCardProps> = ({ challenge, targetDate }) 
     return (
         <div className= "card" >
         <div className="challenge-tag" > Challenge < /div>
-            < h2 className = "goal-title" > { challenge } < /h2>
+            < h2 className = "title" > { challenge } < /h2>
                 < /div>
     );
 };

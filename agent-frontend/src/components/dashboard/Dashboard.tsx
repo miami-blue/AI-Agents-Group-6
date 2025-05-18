@@ -3,12 +3,13 @@ import GoalCard from './GoalCard';
 import ChallengeCard from './ChallengeCard';
 import StreakCard from './StreakCard';
 import MonthlyBudgetCard from './MonthlyBudgetCard';
+import DreamCard from './DreamCard';
 import './dashboard.css'
 
 function Dashboard() {
     return (
         <div className= 'dashboard' >
-        <GoalCard
+        <DreamCard
         title= "My first house"
     emoji = "🏡"
     targetDate = "May 2027"

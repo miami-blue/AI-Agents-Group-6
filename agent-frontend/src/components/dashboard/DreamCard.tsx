@@ -1,24 +1,24 @@
 import React from 'react';
 import './card.css';
 
-type GoalCardProps = {
+type DreamCardProps = {
     title: string;
     emoji: string;
     targetDate: string;
     progress: number;
 };
 
-const GoalCard: React.FC<GoalCardProps> = ({ title, emoji, targetDate, progress, }) => {
+const DreamCard: React.FC<DreamCardProps> = ({ title, emoji, targetDate, progress, }) => {
     return (
         <div className= "card" >
-        <div className="goal-tag" > My goal < /div>
-            < h1 className = "goal-image" >
+        <div className="dream-tag" > My dream < /div>
+            < h1 className = "dream-image" >
                 { emoji } < /h1>
                 < h2 className = "title" > { title } < /h2>
                     < div className = "progress-section" >
                         <div className="progress-bar" >
                             <div
-            className="progress-fill-goal"
+            className="progress-fill"
     style = {{ width: `${progress}%` }
 }
           > </div>
@@ -29,5 +29,4 @@ const GoalCard: React.FC<GoalCardProps> = ({ title, emoji, targetDate, progress,
   );
 };
 
-export default GoalCard;
-
+export default DreamCard;
