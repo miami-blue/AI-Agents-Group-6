@@ -54,67 +54,71 @@ const ChatComponent = () => {
   };
 
   return (
-    <div className="chat-container">
-      <div className="chat-floating-button-container">
-        <ChatFloatingButton onClick={handleOpenChat} />
-      </div>
+    <div className= "chat-container" >
+    <div className="chat-floating-button-container" >
+      <ChatFloatingButton onClick={ handleOpenChat } />
+        < /div>
 
-      {chatOpen && (
-        <>
-       
-          <button
+  {
+    chatOpen && (
+      <>
+      <button
             className="small-button"
-            onClick={() => setChatOpen((prev) => false)}
+    onClick = {() => setChatOpen((prev) => false)}
           >
-            Close
-          </button>
-        <div className="chat-flow-container">
+  Close
+  < /button>
+  < div className = "chat-flow-container" >
+    <div className="chat-flow" >
+      <div className="chat-flow-scroll" >
+      {
+        messageHistory.map((message, index) => (
+          <div key= { index } className = "chat-item-container" >
+          <div className={`chat-item ${message.role}`} >
+      {
+        message.role === 'agent' && <b>Budgy < /b>}
+          < p > { message.content } < /p>
+          < /div>
+          < /div>
+                ))
+      }
 
-          <div className="chat-flow">
-            <div className="chat-flow-scroll">
-              {messageHistory.map((message, index) => (
-                <div key={index} className="chat-item-container">
-                  <div className={`chat-item ${message.role}`}>
-                    {message.role === 'agent' && <b>Budgy</b>}
-                    <p>{message.content}</p>
-                  </div>
-                </div>
-              ))}
+{
+  responseLoading && (
+    <div>I & apos;m thinking, hold on tight...</div>
+                )
+}
+</div>
+  < div className = "chat-input-container" >
+    <input
+                  type="text"
+value = { prompt }
+onKeyDown = {(e) => {
+  if (e.key === 'Enter') {
+    handleSendPrompt(); // Call the send function when Enter is pressed
+  }
+}}
+onChange = {(e) => setPrompt(e.target.value)} // Update the prompt state on input change
+placeholder = "Type your prompt here..."
+  />
 
-              {responseLoading && (
-                <div>I&apos;m thinking, hold on tight...</div>
-              )}
-            </div>
-            <div className="chat-input-container">
-              <input
-                type="text"
-                value={prompt}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    handleSendPrompt(); // Call the send function when Enter is pressed
-                  }
-                }}
-                onChange={(e) => setPrompt(e.target.value)} // Update the prompt state on input change
-                placeholder="Type your prompt here..."
-              />
-
-              <button onClick={handleSendPrompt}>
-                {<img src={arrow_up} width={16} alt="Send" />}
-              </button>
-            </div>
-          </div>
-        </div>
-        </>
+  <button onClick={ handleSendPrompt }>
+    {< img src = { arrow_up } width = { 16} alt = "Send" />}
+</button>
+  < /div>
+  < /div>
+  < /div>
+  < />
       )}
-    </div>
+</div>
   );
 };
 
 const Chat = () => {
   return (
     <ChatProvider>
-      <ChatComponent />
-    </ChatProvider>
+    <ChatComponent />
+    < /ChatProvider>
   );
 };
 
