@@ -1,4 +1,8 @@
 .app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 402px;
   height: 90vh;
   max-height: 874px;
@@ -13,6 +17,7 @@
   justify-content: start;
   align-items: stretch;
   height: 100%;
+  width: 100%;
   gap: 16px;
 }
 
@@ -52,16 +57,25 @@ p {
 }
 
 .chat-container {
-  height: 800px;
-  z-index: 1000;
   position: fixed;
-  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  max-width: 402px;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
 }
 
 .chat-flow-container {
   height: 100%;
   overflow: hidden;
   z-index: 1000;
+  background-color: #ffffff;
 }
 
 .chat-flow {
@@ -89,6 +103,7 @@ p {
 .chat-input-container {
   width: 100%;
   position: relative;
+  color: black;
 }
 
 .chat-input-container input {
@@ -98,6 +113,7 @@ p {
   border-radius: 8px;
   font-size: 16px;
   padding: 12px 32px 12px 12px;
+  color: black;
   /* height: 44px; */
 }
 
@@ -121,6 +137,7 @@ p {
   background: #ffffff;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
+  color: black;
 }
 
 .chat-item-container {

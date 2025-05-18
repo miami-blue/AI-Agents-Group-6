@@ -2,6 +2,7 @@ import BudgetPie from './BudgetPie';
 import GoalCard from './GoalCard';
 import ChallengeCard from './ChallengeCard';
 import StreakCard from './StreakCard';
+import MonthlyBudgetCard from './MonthlyBudgetCard';
 import './dashboard.css'
 
 function Dashboard() {
@@ -24,11 +25,14 @@ function Dashboard() {
         />
         <StreakCard
     streakCount = { 2 }
-    streakHistory = { [true, false, false, true, false, false, false]}
+    streakHistory = { [true, false, false, true, false, true, true]}
         />
         < /div>
         < BudgetPie />
-        </div>
+        <MonthlyBudgetCard
+        budgetLimit = { 1700 }
+    expensesTotal = { 400} />
+        < /div>
     );
 }
 
