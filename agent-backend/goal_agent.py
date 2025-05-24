@@ -81,7 +81,7 @@ async def handle_goal_agent_prompt(input: str):
        
         1. If you need more information from the user, return the response in the following format: REQUEST_INFORMATION:::response
         2. If you want to answer the user directly, return the response in the following format: ANSWER:::response
-        3. If you want to use a tool, return the response in the following format, making sure that the parameters are enclosed as a JSON object: reasoning USE_TOOL:::tool_name:::parameters
+        3. If you want to use a tool, return the response in the following format: reasoning USE_TOOL:::tool_name:::parameters
 
         ## EXAMPLE RESPONSES
 
