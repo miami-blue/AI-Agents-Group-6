@@ -5,6 +5,8 @@ import ChatFloatingButton from './ChatFloatingButton';
 import arrow_up from '../../assets/arrow_up.svg';
 import { useDataContext } from '../../api/DataContext';
 import Markdown from 'react-markdown';
+import './chat.css';
+import budgy_icon from '../../assets/budgy_icon.svg';
 
 const ChatComponent = () => {
   // Refetch the data after agent responses. TODO: Figure out a way to only do it when the agent has used a tool that modifies data.
@@ -79,7 +81,20 @@ const ChatComponent = () => {
                 {messageHistory.map((message, index) => (
                   <div key={index} className="chat-item-container">
                     <div className={`chat-item ${message.role}`}>
-                      {message.role === 'agent' && <b>Budgy </b>}
+                      {message.role === 'agent' && (
+                        <div className="budgy-chat-item-header">
+                          <div className="budgy-avatar-container">
+                            <img
+                              src={budgy_icon}
+                              alt="Budgy Icon"
+                              width={24}
+                              height={24}
+                            ></img>
+                          </div>
+
+                          <b>Budgy</b>
+                        </div>
+                      )}
                       <Markdown children={message.content} />
                     </div>
                   </div>

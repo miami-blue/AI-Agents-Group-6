@@ -15,19 +15,27 @@ const DreamCard = () => {
         )
       : undefined;
 
+  const formattedDueDate = dream?.due_date
+    ? new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: 'long',
+      }).format(new Date(dream.due_date))
+    : undefined;
+
   return (
     <div className="card">
-      <div className="dream-tag"> My dream</div>
-      <h1 className="dream-image">{'🏡'}</h1>
+      <div className="dream-tag">My dream</div>
+      <h1 className="dream-image">{'⭐'}</h1>
       <h2 className="title"> {dream?.goal_name}</h2>
-      <div>{dream?.target_amount} €</div>
+      <div className="subtitle">{formattedDueDate}</div>
+
       <div className="progress-section">
         <div className="progress-bar">
           <div className="progress-fill" style={{ width: `${0}%` }}>
             {' '}
           </div>
         </div>
-        <div className="target-date"> {dream?.due_date} </div>
+        <div className="progress-target"> {dream?.target_amount} €</div>
       </div>
     </div>
   );

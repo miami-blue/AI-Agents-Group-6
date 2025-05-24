@@ -16,7 +16,7 @@ function Dashboard() {
         targetDate="May 2027"
       />
       <div className="small-card">
-        <GoalCard title="Pizza Oven" emoji="🍕" progress={50} />
+        <GoalCard />
 
         <StreakCard
           streakCount={2}
