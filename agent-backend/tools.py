@@ -50,7 +50,7 @@ tool_definitions = [
         },
         {
         "tool_name": "save_goal",
-        "description": "Saves a new financial goal for a user, and returns the saved goal. You should only use this tool when you have all the information needed to save a goal and think that the user can realistically save the desired amount.",
+        "description": "Saves a new financial goal for a user, and returns the saved goal. You should only use this tool when you have all the information needed to save a goal and think that the user can realistically save the desired amount. If the user wants to edit an existing goal, you should first delete the existing goal using the delete_goal tool, and then save the new goal with this tool.",
         "parameters": {
             "goal_name": "string", 
             "target_amount": "float",
@@ -185,4 +185,3 @@ def save_goal(params: SaveGoalParams):
         raise HTTPException(status_code=400, detail=f"Invalid parameters: {str(e)}")
 
 
-    
