@@ -25,7 +25,7 @@ const BudgetPie: React.FC = () => {
             fill="#8884d8"
             paddingAngle={5}
           >
-            {data.map((entry, index) => (
+            {data.map((_entry, index) => (
               <Cell
                 key={`cell-${index}`}
                 fill={COLORS[index % COLORS.length]}
