@@ -1,5 +1,6 @@
 import React from 'react';
 import './card.css';
+import GoalProgressBar from './GoalProgressBar';
 
 type GoalCardProps = {
   title: string;
@@ -20,11 +21,7 @@ const GoalCard: React.FC<GoalCardProps> = ({
       <h1 className="goal-image">{emoji} </h1>
       <h2 className="title"> {title} </h2>
       <div className="progress-section">
-        <div className="progress-bar">
-          <div className="progress-fill-goal" style={{ width: `${progress}%` }}>
-            {' '}
-          </div>
-        </div>
+        <GoalProgressBar progress={progress} />
         <div className="target-date"> {targetDate} </div>
       </div>
     </div>

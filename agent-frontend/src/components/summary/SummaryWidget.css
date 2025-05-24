@@ -1,0 +1,132 @@
+.summary-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+  gap: 1rem;
+}
+
+.summary-widget {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 24px 24px 24px;
+  min-width: 320px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border: #e6e6e8 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.summary-label {
+  font-weight: 500;
+}
+
+.summary-value {
+  font-weight: 700;
+  color: #2e7d32;
+  font-size: 2rem;
+}
+
+.summary-value2 {
+  font-weight: 700;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.summary-value3 {
+  font-weight: 700;
+  color: #6d0000;
+  font-size: 2rem;
+}
+
+.tile {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1;
+}
+
+.goal-overview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.goal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.goal-overview .goal-image {
+  min-width: 64px;
+  height: 64px;
+  margin: 0;
+}
+
+.goal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  gap: 0.5rem;
+}
+
+.goal-details h3 {
+  margin: 0;
+}
+
+.goal-details .progress-bar {
+  margin: 0;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
