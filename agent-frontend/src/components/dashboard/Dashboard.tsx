@@ -9,12 +9,7 @@ import './dashboard.css';
 function Dashboard() {
   return (
     <div className="dashboard">
-      <DreamCard
-        title="My first house"
-        emoji="🏡"
-        targetDate="May 2027"
-        progress={10}
-      />
+      <DreamCard />
 
       <ChallengeCard
         challenge="Eat Wolt less than 2 times a week"

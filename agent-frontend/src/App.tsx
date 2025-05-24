@@ -1,3 +1,4 @@
+import { DataProvider } from './api/DataContext';
 import './App.css';
 import Chat from './components/chat/Chat';
 import Dashboard from './components/dashboard/Dashboard';
@@ -5,14 +6,16 @@ import Dashboard from './components/dashboard/Dashboard';
 const App = () => {
   return (
     <>
-    <div className= "app-container" >
-    <div className="app-content" >
-      <h1>Welcome back Bob! < /h1>
-        < Dashboard />
-        <Chat />
-        < /div>
-        < /div>
-        < />
+      <DataProvider>
+        <div className="app-container">
+          <div className="app-content">
+            <h1>Welcome back Bob! </h1>
+            <Dashboard />
+            <Chat />
+          </div>
+        </div>
+      </DataProvider>
+    </>
   );
 };
 
