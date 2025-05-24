@@ -1,4 +1,4 @@
-
+import json
 from pydantic import BaseModel
 from dotenv import load_dotenv
 import os
@@ -50,7 +50,7 @@ tool_definitions = [
         },
         {
         "tool_name": "save_goal",
-        "description": "Saves a new financial goal for a user, and returns the saved goal. You should only use this tool when you have all the information needed to save a goal.",
+        "description": "Saves a new financial goal for a user, and returns the saved goal. You should only use this tool when you have all the information needed to save a goal and think that the user can realistically save the desired amount.",
         "parameters": {
             "goal_name": "string", 
             "target_amount": "float",
@@ -64,22 +64,45 @@ tool_definitions = [
             "due_date": "string (YYYY-MM-DD)",
         }
         },
-    # {
-    #     "tool_name": "assess_feasibility_of_goal",
-    #     "description": "Assesses whether a financial goal is feasible based on user data.",
-    #     "parameters": {
-    #         "goal_name": "string", 
-    #         "target_amount": "float",
-    #         "due_date": "string (YYYY-MM-DD)",
-    #         "monthly_amount": "float",
-    #     },
-    #     "expected_output": {
-    #         "feasible": "boolean",
-    #         "reason": "string"
-    #     }
-    # }
+        {
+        "tool_name": "delete_goal",
+        "description": "Deletes a financial goal by its ID. You should only use this tool when the user explicitly asks to delete a goal, and always ask the user to confirm the goal_name and id before executing this action. If the user does not provide an ID, you should find the goal by its goal_name from the list of goals, and get the ID from there.",
+        "parameters": {
+            "id": "string (UUID)",
+        },
+        "expected_output": {
+            "id": "string (UUID)"
+        }
+    }
 ]
 
+async def handle_tool_usage(response: str):
+    try:
+        # Parse the tool name and parameters from the response
+        response_parts = response.split("USE_TOOL:::", 1)
+        if len(response_parts) != 2:
+            raise ValueError("Invalid tool usage response format")
+        tool_name_and_params = response_parts[1]
+        tool_name, parameters = tool_name_and_params.split(":::", 1)
+        parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
+
+        # Dynamically call the corresponding tool function
+        if tool_name == "save_goal":
+            validated_params = SaveGoalParams(**parameters)
+            result = save_goal(validated_params)  # Call the save_goal function with validated parameters
+        elif tool_name == "get_goals":
+            result = get_goals()
+        elif tool_name == "delete_goal":
+            validated_params = DeleteGoalParams(**parameters)  # Validate parameters using Pydantic
+            result = delete_goal(validated_params)  # Call the delete_goal function with validated parameters
+        else:
+            return f"Unknown tool: {tool_name}"
+
+        # Return the result of the tool execution
+        return f"Tool '{tool_name}' executed successfully. Result: {json.dumps(result)}"
+        
+    except Exception as e:
+        return f"An error occurred while using the tool: {str(e)}"
 
 
    # Load Transactions
@@ -122,6 +145,21 @@ def get_goals():
         print(f"Error fetching goals: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch goals from the /goals endpoint.")
 
+class DeleteGoalParams(BaseModel):
+    id: str
+def delete_goal(params: DeleteGoalParams):
+    try:
+        # Send a DELETE request to the /goals endpoint with the goal_id
+        response = requests.delete(
+            JSON_SERVER_URL + f"/goals/{params.id}",
+        )
+        response.raise_for_status()  # Raise an error for HTTP errors
+
+        return params.dict()  # Return a success message
+    except requests.exceptions.RequestException as e:
+        print(f"Error deleting goal: {e}")
+        raise HTTPException(status_code=500, detail="Failed to delete the goal from the /goals endpoint.")
+
 
 class SaveGoalParams(BaseModel):
     goal_name: str
@@ -134,7 +172,7 @@ def save_goal(params: SaveGoalParams):
         # Send the goal to the /goals endpoint
         response = requests.post(
             JSON_SERVER_URL + "/goals",
-            json=params
+            json=params.dict()  # Convert Pydantic model to dictionary
         )
         response.raise_for_status()  # Raise an error for HTTP errors
 

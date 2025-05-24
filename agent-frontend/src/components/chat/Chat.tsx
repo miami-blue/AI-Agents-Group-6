@@ -4,6 +4,7 @@ import { ChatProvider, useChatContext } from './ChatContext';
 import ChatFloatingButton from './ChatFloatingButton';
 import arrow_up from '../../assets/arrow_up.svg';
 import { useDataContext } from '../../api/DataContext';
+import Markdown from 'react-markdown';
 
 const ChatComponent = () => {
   // Refetch the data after agent responses. TODO: Figure out a way to only do it when the agent has used a tool that modifies data.
@@ -79,13 +80,13 @@ const ChatComponent = () => {
                   <div key={index} className="chat-item-container">
                     <div className={`chat-item ${message.role}`}>
                       {message.role === 'agent' && <b>Budgy </b>}
-                      <p> {message.content} </p>
+                      <Markdown children={message.content} />
                     </div>
                   </div>
                 ))}
 
                 {responseLoading && (
-                  <div>I & apos;m thinking, hold on tight...</div>
+                  <div>I&apos;m thinking, hold on tight...</div>
                 )}
               </div>
               <div className="chat-input-container">
