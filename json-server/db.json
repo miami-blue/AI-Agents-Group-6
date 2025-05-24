@@ -48,10 +48,17 @@
   ],
   "goals": [
     {
-      "id": "991e",
-      "goal_name": "Downpayment for an apartment",
-      "target_amount": 10800,
-      "monthly_amount": 300,
+      "id": "3dbf",
+      "goal_name": "Bicycle",
+      "target_amount": 500,
+      "monthly_amount": 294.12,
+      "due_date": "2025-07-01"
+    },
+    {
+      "id": "b06c",
+      "goal_name": "Apartment Downpayment",
+      "target_amount": 30000,
+      "monthly_amount": 833.33,
       "due_date": "2028-05-10"
     }
   ],
