@@ -1,0 +1,62 @@
+.streak-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ff7f50, #ff4500);
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  min-width: 50%;
+  text-align: center;
+  box-shadow: 0 0 16px rgba(255, 69, 0, 0.4);
+  gap: 8px;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff58;
+}
+
+.rocket-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.streak-text h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #3b0a00;
+}
+
+.streak-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #3b0a00;
+}
+
+.dots-row {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+.dot.filled {
+  opacity: 1;
+  background-color: #7a0000;
+}
