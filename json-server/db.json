@@ -1,49 +1,196 @@
 {
-  "budget": [
+  "budgets": [
     {
-      "category": "Transport",
-      "amount": 100,
-      "id": "8179"
+      "Month": "2024-04",
+      "Category": "Household & Services",
+      "Amount": 1000,
+      "id": "b603"
     },
     {
-      "category": "Home Improvements",
-      "amount": 80,
-      "id": "fbb3"
+      "Month": "2024-04",
+      "Category": "Food & Drinks",
+      "Amount": 400,
+      "id": "be72"
     },
     {
-      "category": "Health & Beauty",
-      "amount": 50,
-      "id": "3eb9"
+      "Month": "2024-04",
+      "Category": "Food & Drinks",
+      "Amount": 150,
+      "id": "a812"
     },
     {
-      "category": "Leisure",
-      "amount": 200,
-      "id": "76ab"
+      "Month": "2024-04",
+      "Category": "Transport",
+      "Amount": 100,
+      "id": "063f"
     },
     {
-      "category": "Food & Drinks",
-      "amount": 500,
-      "id": "891d"
+      "Month": "2024-04",
+      "Category": "Household & Services",
+      "Amount": 150,
+      "id": "adb8"
     },
     {
-      "category": "Shopping",
-      "amount": 70,
-      "id": "81ee"
+      "Month": "2024-04",
+      "Category": "Leisure",
+      "Amount": 120,
+      "id": "2507"
     },
     {
-      "category": "Income",
-      "amount": 1500,
-      "id": "a90d"
+      "Month": "2024-04",
+      "Category": "Health & Beauty",
+      "Amount": 80,
+      "id": "4441"
     },
     {
-      "category": "Household & Services",
-      "amount": 50,
-      "id": "ae41"
+      "Month": "2024-04",
+      "Category": "Income",
+      "Amount": 300,
+      "id": "6664"
     },
     {
-      "category": "Other",
-      "amount": 200,
-      "id": "12b7"
+      "Month": "2024-03",
+      "Category": "Household & Services",
+      "Amount": 1000,
+      "id": "46d0"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Food & Drinks",
+      "Amount": 390,
+      "id": "e564"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Food & Drinks",
+      "Amount": 150,
+      "id": "9614"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Transport",
+      "Amount": 95,
+      "id": "bb19"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Household & Services",
+      "Amount": 150,
+      "id": "3642"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Leisure",
+      "Amount": 110,
+      "id": "48b4"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Health & Beauty",
+      "Amount": 80,
+      "id": "e2c6"
+    },
+    {
+      "Month": "2024-03",
+      "Category": "Income",
+      "Amount": 300,
+      "id": "2fdd"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Household & Services",
+      "Amount": 1000,
+      "id": "8abd"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Food & Drinks",
+      "Amount": 380,
+      "id": "ca93"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Food & Drinks",
+      "Amount": 140,
+      "id": "3d64"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Transport",
+      "Amount": 95,
+      "id": "8eb5"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Household & Services",
+      "Amount": 150,
+      "id": "afbf"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Leisure",
+      "Amount": 110,
+      "id": "a994"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Health & Beauty",
+      "Amount": 80,
+      "id": "298e"
+    },
+    {
+      "Month": "2024-02",
+      "Category": "Income",
+      "Amount": 300,
+      "id": "1e4d"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Household & Services",
+      "Amount": 1000,
+      "id": "d040"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Food & Drinks",
+      "Amount": 380,
+      "id": "dbcc"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Food & Drinks",
+      "Amount": 140,
+      "id": "fd1f"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Transport",
+      "Amount": 95,
+      "id": "b9d5"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Household & Services",
+      "Amount": 150,
+      "id": "9aac"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Leisure",
+      "Amount": 110,
+      "id": "e18a"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Health & Beauty",
+      "Amount": 80,
+      "id": "60cb"
+    },
+    {
+      "Month": "2024-01",
+      "Category": "Income",
+      "Amount": 300,
+      "id": "351b"
     }
   ],
   "goals": [
@@ -72,6 +219,107 @@
   "userinfo": {
     "description": "In November, my income will be 1500 euros. In December, I'm planning a 5-day trip to Paris, and for that I need to save extra money in November."
   },
+  "summaries": [
+    {
+      "month": "2024-05",
+      "actual_totals": {
+        "Health & Beauty": -722.71,
+        "Other": -760.78,
+        "Food & Drinks": -247.09,
+        "Income": 1500,
+        "Home Improvements": -1179.92,
+        "Transport": -563.58,
+        "Leisure": -671.1,
+        "Shopping": -1089.01,
+        "Household & Services": -1122.02
+      },
+      "budget_plan": {},
+      "pct_vs_budget": {},
+      "net_change_in_spending_vs_prev_month": 963.44,
+      "goal_progress": [
+        {
+          "goal": "Skiing trip next January",
+          "progress_pct": 12.5
+        },
+        {
+          "goal": "Bicycle for next April",
+          "progress_pct": 9.1
+        },
+        {
+          "goal": "Downpayment for an apartment",
+          "progress_pct": 2.8
+        }
+      ],
+      "category_trends_vs_prev_month": {
+        "Household & Services": {
+          "current_spending": -1122.02,
+          "previous_spending": -1283.97,
+          "change_amount": 161.95,
+          "percent_change": "-12.6%"
+        },
+        "Other": {
+          "current_spending": -760.78,
+          "previous_spending": -675.21,
+          "change_amount": -85.57,
+          "percent_change": "12.7%"
+        },
+        "Food & Drinks": {
+          "current_spending": -247.09,
+          "previous_spending": -249.66,
+          "change_amount": 2.57,
+          "percent_change": "-1.0%"
+        },
+        "Transport": {
+          "current_spending": -563.58,
+          "previous_spending": -230.34,
+          "change_amount": -333.24,
+          "percent_change": "144.7%"
+        },
+        "Home Improvements": {
+          "current_spending": -1179.92,
+          "previous_spending": -2080.79,
+          "change_amount": 900.87,
+          "percent_change": "-43.3%"
+        },
+        "Health & Beauty": {
+          "current_spending": -722.71,
+          "previous_spending": -544.62,
+          "change_amount": -178.09,
+          "percent_change": "32.7%"
+        },
+        "Leisure": {
+          "current_spending": -671.1,
+          "previous_spending": -1056.8,
+          "change_amount": 385.7,
+          "percent_change": "-36.5%"
+        },
+        "Shopping": {
+          "current_spending": -1089.01,
+          "previous_spending": -1198.26,
+          "change_amount": 109.25,
+          "percent_change": "-9.1%"
+        }
+      },
+      "top_transactions_details_for_most_spent_category": {
+        "Food & Drinks": [
+          {
+            "Source": "Alko",
+            "Amount": -11.19
+          },
+          {
+            "Source": "Steam Helsinki",
+            "Amount": -11.31
+          },
+          {
+            "Source": "Foodora",
+            "Amount": -18.43
+          }
+        ]
+      },
+      "most_spent_category_excluding_income": "Food & Drinks",
+      "id": "4f7a"
+    }
+  ],
   "transactions": [
     {
       "Date": "2024-01-01",
