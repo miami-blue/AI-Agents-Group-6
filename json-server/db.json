@@ -221,21 +221,35 @@
   },
   "summaries": [
     {
-      "month": "2024-05",
+      "month": "2024-04",
       "actual_totals": {
-        "Health & Beauty": -722.71,
-        "Other": -760.78,
-        "Food & Drinks": -247.09,
+        "Leisure": -1056.8,
+        "Shopping": -1198.26,
+        "Health & Beauty": -544.62,
+        "Other": -675.21,
+        "Household & Services": -1283.97,
+        "Home Improvements": -2080.79,
         "Income": 1500,
-        "Home Improvements": -1179.92,
-        "Transport": -563.58,
-        "Leisure": -671.1,
-        "Shopping": -1089.01,
-        "Household & Services": -1122.02
+        "Food & Drinks": -249.66,
+        "Transport": -230.34
       },
-      "budget_plan": {},
-      "pct_vs_budget": {},
-      "net_change_in_spending_vs_prev_month": 963.44,
+      "budget_plan": {
+        "Household & Services": 150,
+        "Food & Drinks": 150,
+        "Transport": 100,
+        "Leisure": 120,
+        "Health & Beauty": 80,
+        "Income": 300
+      },
+      "pct_vs_budget": {
+        "Leisure": -980.7,
+        "Health & Beauty": -780.8,
+        "Household & Services": -956,
+        "Income": 400,
+        "Food & Drinks": -266.4,
+        "Transport": -330.3
+      },
+      "net_change_in_spending_vs_prev_month": 243.38,
       "goal_progress": [
         {
           "goal": "Skiing trip next January",
@@ -252,71 +266,71 @@
       ],
       "category_trends_vs_prev_month": {
         "Household & Services": {
-          "current_spending": -1122.02,
-          "previous_spending": -1283.97,
-          "change_amount": 161.95,
-          "percent_change": "-12.6%"
+          "current_spending": -1283.97,
+          "previous_spending": -1062.36,
+          "change_amount": -221.61,
+          "percent_change": "20.9%"
         },
         "Other": {
-          "current_spending": -760.78,
-          "previous_spending": -675.21,
-          "change_amount": -85.57,
-          "percent_change": "12.7%"
+          "current_spending": -675.21,
+          "previous_spending": -1238.95,
+          "change_amount": 563.74,
+          "percent_change": "-45.5%"
         },
         "Food & Drinks": {
-          "current_spending": -247.09,
-          "previous_spending": -249.66,
-          "change_amount": 2.57,
-          "percent_change": "-1.0%"
+          "current_spending": -249.66,
+          "previous_spending": -311.98,
+          "change_amount": 62.32,
+          "percent_change": "-20.0%"
         },
         "Transport": {
-          "current_spending": -563.58,
-          "previous_spending": -230.34,
-          "change_amount": -333.24,
-          "percent_change": "144.7%"
+          "current_spending": -230.34,
+          "previous_spending": -640.07,
+          "change_amount": 409.73,
+          "percent_change": "-64.0%"
         },
         "Home Improvements": {
-          "current_spending": -1179.92,
-          "previous_spending": -2080.79,
-          "change_amount": 900.87,
-          "percent_change": "-43.3%"
+          "current_spending": -2080.79,
+          "previous_spending": -1776.81,
+          "change_amount": -303.98,
+          "percent_change": "17.1%"
         },
         "Health & Beauty": {
-          "current_spending": -722.71,
-          "previous_spending": -544.62,
-          "change_amount": -178.09,
-          "percent_change": "32.7%"
+          "current_spending": -544.62,
+          "previous_spending": -407.38,
+          "change_amount": -137.24,
+          "percent_change": "33.7%"
         },
         "Leisure": {
-          "current_spending": -671.1,
-          "previous_spending": -1056.8,
-          "change_amount": 385.7,
-          "percent_change": "-36.5%"
+          "current_spending": -1056.8,
+          "previous_spending": -891.31,
+          "change_amount": -165.49,
+          "percent_change": "18.6%"
         },
         "Shopping": {
-          "current_spending": -1089.01,
-          "previous_spending": -1198.26,
-          "change_amount": 109.25,
-          "percent_change": "-9.1%"
+          "current_spending": -1198.26,
+          "previous_spending": -1234.17,
+          "change_amount": 35.91,
+          "percent_change": "-2.9%"
         }
       },
       "top_transactions_details_for_most_spent_category": {
-        "Food & Drinks": [
+        "Transport": [
           {
-            "Source": "Alko",
-            "Amount": -11.19
+            "Source": "Shell",
+            "Amount": -8.57
           },
           {
-            "Source": "Steam Helsinki",
-            "Amount": -11.31
+            "Source": "VR",
+            "Amount": -21.98
           },
           {
-            "Source": "Foodora",
-            "Amount": -18.43
+            "Source": "Uber",
+            "Amount": -27.99
           }
         ]
       },
-      "most_spent_category_excluding_income": "Food & Drinks",
+      "most_spent_category_excluding_income": "Transport",
       "id": "4f7a"
     }
   ],
