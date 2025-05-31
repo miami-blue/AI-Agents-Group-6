@@ -10,12 +10,15 @@ router = APIRouter()
 class GoalAgentRequest(BaseModel):
     prompt: str
 
+class BudgetAgentRequest(BaseModel):
+    prompt: str
+
 @router.post("/goal-agent/prompt")
 async def handle_prompt(request: GoalAgentRequest):
     return await handle_goal_agent_prompt(request.prompt)
 
 @router.post("/budget-agent/prompt")
-async def handle_prompt(request: PromptRequest):
+async def handle_prompt(request: BudgetAgentRequest):
     return await handle_budget_agent_prompt(request.prompt)
 
 class SummaryRequest(BaseModel):
