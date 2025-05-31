@@ -15,40 +15,9 @@ JSON_SERVER_URL = os.getenv("JSON_SERVER_URL")
 if not JSON_SERVER_URL:
     raise ValueError("JSON_SERVER_URL is not set in the .env file")
 
-# Handle tool usage
-async def handle_tool_usage(response: str):
-    try:
-        # Parse the tool name and parameters from the response
-        response_parts = response.split("USE_TOOL:::", 1)
-        if len(response_parts) != 2:
-            raise ValueError("Invalid tool usage response format")
-        tool_name_and_params = response_parts[1]
-        tool_name, parameters = tool_name_and_params.split(":::", 1)
-        tool_name = tool_name.strip()  # Remove any whitespace
-        parameters = json.loads(parameters.strip().split('\n')[0])  # Convert parameters from JSON string to dictionary
-
-        # Dynamically call the corresponding tool function
-        match tool_name:
-            case "save_goal":
-                result = save_goal(parameters)  # Call the save_goal function with validated parameters
-            case "get_goals":
-                result = get_goals()
-            case "get_transactions":
-                result = get_transactions(parameters)
-            case "save_budget":
-                result = save_budget(parameters)
-            case _:
-                return f"Unknown tool: {tool_name}"
-
-        # Return the result of the tool execution
-        return f"Tool '{tool_name}' executed successfully. Result: {json.dumps(result)}"
-        
-    except Exception as e:
-        return f"An error occurred while using the tool: {str(e)}"
-
 tool_definitions = [
     {
-        "tool_name": "get_transactions",
+        "tool_name": "get_transactions_in_range",
         "description": "Fetches transactions for a user for a given time period.",
         "parameters": {
             "start_date": "string (YYYY-MM-DD)", 
@@ -100,25 +69,24 @@ tool_definitions = [
     },
     {
         "tool_name": "save_budget",
-        "description": "Saves a new financial budget for a month for a user, and returns the saved budget. You should only use this tool when you have all the information needed to save a budget.",
+        "description": "Saves the entire financial budget for a month for a user. Accepts a month and a list of budget items (category and amount). Each item will be saved as a separate row in the database. Make sure you give the parameters in the correct JSON format. Make sure the tool call is a single JSON object (not a stringified or escaped object).",
         "parameters": {
-            "month": "string (YYYY-MM)",
-            "items": [
+            "Month": "string (YYYY-MM)",
+            "Items": [
                 {
-                    "category": "string",
-                    "amount": "float"
+                    "Category": "string",
+                    "Amount": "float"
                 }
             ]
         },
-        "expected_output": {
-            "month": "string (YYYY-MM)",
-            "items": [
-                {
-                    "category": "string",
-                    "amount": "float"
-                }
-            ]
-        }
+        "expected_output": [
+            {
+                "Month": "string (YYYY-MM)",
+                "Category": "string",
+                "Amount": "float",
+                "id": "string"
+            }
+        ]
     },
     {
         "tool_name": "delete_goal",
@@ -151,6 +119,10 @@ async def handle_tool_usage(response: str):
         elif tool_name == "delete_goal":
             validated_params = DeleteGoalParams(**parameters)  # Validate parameters using Pydantic
             result = delete_goal(validated_params)  # Call the delete_goal function with validated parameters
+        elif tool_name == "get_transactions_in_range":
+            result = get_transactions_in_range(parameters)
+        elif tool_name == "save_budget":
+            result = save_budget(parameters)
         else:
             return f"Unknown tool: {tool_name}"
 
@@ -185,6 +157,35 @@ def get_transactions(month: str):
         ]
 
         return filtered_transactions
+    except Exception as e:
+        print(f"Error processing transactions: {e}")
+        raise HTTPException(status_code=500, detail="Failed to process transactions.")
+
+def get_transactions_in_range(params: dict):
+    """Return all transactions for the given date range (inclusive)."""
+    try:
+        start_date = params.get("start_date")
+        end_date = params.get("end_date")
+        if not start_date or not end_date:
+            raise ValueError("Both start_date and end_date must be provided.")
+
+        # Parse dates
+        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+        end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+
+        # Load all transactions
+        transactions = load_transactions()
+
+        # Filter transactions by the given date range (inclusive)
+        filtered_transactions = [
+            t for t in transactions
+            if start_dt <= datetime.strptime(t["Date"], "%Y-%m-%d") <= end_dt
+        ]
+
+        return {
+            "transactions": filtered_transactions,
+            "total_count": len(filtered_transactions)
+        }
     except Exception as e:
         print(f"Error processing transactions: {e}")
         raise HTTPException(status_code=500, detail="Failed to process transactions.")
@@ -244,41 +245,53 @@ class SaveBudgetParams(BaseModel):
 
 def save_budget(params: dict):
     """
-    Saves a new budget for a given month into the JSON server database.
-    If a budget for the month exists, it will NOT be overwritten.
+    Saves the entire budget for a given month (multiple categories) into the JSON server database.
     """
     try:
-        # Get all budgets
+        month = params["Month"]
+        items = params["Items"]
+        if not isinstance(items, list):
+            raise ValueError("Items must be a list of {Category, Amount} objects.")
+
+        # Fetch existing budgets
         response = requests.get(JSON_SERVER_URL + "/budgets")
         response.raise_for_status()
         budgets = response.json()
 
-        # Check if a budget for the same month already exists
-        existing = next((b for b in budgets if b.get("month") == params["month"]), None)
-        if existing:
-            return {
-                "success": False,
-                "message": f"A budget for month {params['month']} already exists and cannot be overwritten."
-            }
+        results = []
+        for item in items:
+            category = item["Category"]
+            amount = item["Amount"]
 
-        # Add the new budget
-        post_response = requests.post(
-            JSON_SERVER_URL + "/budgets",
-            json={
-                "month": params["month"],
-                "items": params["items"]
-            }
-        )
-        post_response.raise_for_status()
-        return {
-            "success": True,
-            "budget": post_response.json()
-        }
-    except requests.exceptions.RequestException as e:
-        print(f"Error saving budget: {e}")
-        raise HTTPException(status_code=500, detail="Failed to save the budget to the /budgets endpoint.")
+            # Check for duplicates
+            exists = any(
+                b.get("Month") == month and b.get("Category") == category
+                for b in budgets
+            )
+            if exists:
+                results.append({
+                    "Month": month,
+                    "Category": category,
+                    "Amount": amount,
+                    "error": "Already exists"
+                })
+                continue
+
+            # Save new budget row
+            post_response = requests.post(
+                JSON_SERVER_URL + "/budgets",
+                json={
+                    "Month": month,
+                    "Category": category,
+                    "Amount": amount
+                }
+            )
+            post_response.raise_for_status()
+            results.append(post_response.json())
+
+        return results
     except Exception as e:
-        print(f"Validation or other error: {e}")
+        print(f"Error saving budget: {e}")
         raise HTTPException(status_code=400, detail=f"Invalid parameters: {str(e)}")
 
 
