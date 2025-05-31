@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 from goal_agent import handle_goal_agent_prompt
+from budget_agent import handle_budget_agent_prompt
 from summary_agent import generate_monthly_summary
 from typing import Optional
 
@@ -12,6 +13,10 @@ class GoalAgentRequest(BaseModel):
 @router.post("/goal-agent/prompt")
 async def handle_prompt(request: GoalAgentRequest):
     return await handle_goal_agent_prompt(request.prompt)
+
+@router.post("/budget-agent/prompt")
+async def handle_prompt(request: PromptRequest):
+    return await handle_budget_agent_prompt(request.prompt)
 
 class SummaryRequest(BaseModel):
     month: Optional[str] = None       # yyyy-mm; default = last complete month
