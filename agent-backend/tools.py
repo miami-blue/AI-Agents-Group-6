@@ -4,11 +4,12 @@ from dotenv import load_dotenv
 import os
 import requests
 from fastapi import HTTPException
+from typing import Dict, List
 
 # Load environment variables from .env file
 load_dotenv()
 
-# Config Gemini
+# Config
 JSON_SERVER_URL = os.getenv("JSON_SERVER_URL")
 if not JSON_SERVER_URL:
     raise ValueError("JSON_SERVER_URL is not set in the .env file")
@@ -116,21 +117,19 @@ def load_transactions():
         print(f"Error fetching transactions: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch transactions from the /transactions endpoint.")
 
-def get_transactions(start_date: str, end_date: str):
+def get_transactions(month: str):
+    """Return all txns for the yyyy-mm period."""
     try:
         # Load all transactions
         transactions = load_transactions()
 
         # Filter transactions by the given date range
         filtered_transactions = [
-            transaction for transaction in transactions
-            if start_date <= transaction["Date"] <= end_date
+        t for t in transactions
+        if t["Date"].startswith(month)
         ]
 
-        return {
-            "transactions": filtered_transactions,
-            "total_count": len(filtered_transactions)
-        }
+        return filtered_transactions
     except Exception as e:
         print(f"Error processing transactions: {e}")
         raise HTTPException(status_code=500, detail="Failed to process transactions.")
@@ -185,3 +184,70 @@ def save_goal(params: SaveGoalParams):
         raise HTTPException(status_code=400, detail=f"Invalid parameters: {str(e)}")
 
 
+def load_budgets():
+    """Fetch all budgets already saved by your Budget Agent."""
+    try:
+        # Call the FastAPI endpoint
+        response = requests.get(JSON_SERVER_URL + "/budgets")
+        response.raise_for_status()  # Raise an error for HTTP errors
+        return response.json()  # Return the JSON response as a Python list
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching budgets: {e}")
+        raise HTTPException(status_code=500, detail="Failed to fetch budgets from the /budgets endpoint.")
+
+def get_budget(month: str) -> Dict[str, float]:
+    """Budget already saved by your Budget Agent."""
+    try:
+        # Load all budgets
+        budgets = load_budgets()
+
+        # detect flat rows: they have a "Month" key
+        if budgets and "Month" in budgets[0]:
+            return {
+                row["Category"]: row["Amount"]
+                for row in budgets
+                if row["Month"] == month
+            }
+
+        # otherwise fall back to the nested structure
+        for b in budgets:
+            if b.get("month") == month:
+                return b.get("categories", {})
+        return {}
+    except Exception as e:
+        print(f"Error processing budgets: {e}")
+        raise HTTPException(status_code=500, detail="Failed to process budgets.")
+
+
+
+def gather_goal_progress(month: str) -> List[Dict]:
+    """Very naive: look at db.goals[*].saved field updated elsewhere."""
+    goals = get_goals()
+    progress = []
+    for g in goals:
+        pct = round(100*g["monthly_amount"]/g["target_amount"], 1)
+        progress.append({"goal": g["goal_name"], "progress_pct": pct})
+    return progress
+
+
+def save_summary(month: str, parsed: Dict):
+    summary = {"month": month, **parsed}
+
+    try:
+        # Check if a summary for the month already exists
+        response = requests.get(f"{JSON_SERVER_URL}/summaries")
+        response.raise_for_status()
+        existing = response.json()
+
+        if existing:
+            # Update the existing summary
+            summary_id = existing[0]["id"]
+            put_response = requests.put(f"{JSON_SERVER_URL}/summaries/{summary_id}", json=summary)
+            put_response.raise_for_status()
+        else:
+            # Create a new summary
+            post_response = requests.post(f"{JSON_SERVER_URL}/summaries", json=summary)
+            post_response.raise_for_status()
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error saving summary for {month}: {e}")

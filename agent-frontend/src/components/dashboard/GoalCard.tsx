@@ -18,7 +18,9 @@ const GoalCard = () => {
 
   const goalsExcludingDream = goalsResponse.data
     .filter((goal) => goal.id !== dream?.id)
-    .sort((a, b) => new Date(a.due_date).getTime() - new Date(b.due_date).getTime());
+    .sort(
+      (a, b) => new Date(a.due_date).getTime() - new Date(b.due_date).getTime()
+    );
 
   const nextGoal =
     goalsExcludingDream.length > 0
@@ -29,13 +31,13 @@ const GoalCard = () => {
         )
       : undefined;
 
-      const [selectedGoal, setSelectedGoal] = useState(nextGoal)
+  const [selectedGoal, setSelectedGoal] = useState(nextGoal);
 
-      useEffect(() => {
-        if (nextGoal) {
-          setSelectedGoal(nextGoal)
-        }
-      }, [nextGoal?.id])
+  useEffect(() => {
+    if (nextGoal) {
+      setSelectedGoal(nextGoal);
+    }
+  }, [nextGoal?.id]);
 
   const formattedDueDate = selectedGoal?.due_date
     ? new Intl.DateTimeFormat('en-US', {
@@ -43,7 +45,6 @@ const GoalCard = () => {
         month: 'long',
       }).format(new Date(selectedGoal.due_date))
     : undefined;
-
 
   return (
     <div className="card">
@@ -61,17 +62,16 @@ const GoalCard = () => {
         <div className="progress-target">{selectedGoal?.target_amount} €</div>
       </div>
 
-<div className='dots-row'>
-      {goalsExcludingDream.map((goal, index) => (
-     
-            <div role='button'
-             onClick={() => setSelectedGoal(goal)}
-             key={index}
-              className={`dot ${selectedGoal?.id === goal.id ? 'filled' : 'not-selected'}`}
-            />
-
-      ))}
-</div>
+      <div className="dots-row">
+        {goalsExcludingDream.map((goal, index) => (
+          <div
+            role="button"
+            onClick={() => setSelectedGoal(goal)}
+            key={index}
+            className={`dot ${selectedGoal?.id === goal.id ? 'filled' : 'not-selected'}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
