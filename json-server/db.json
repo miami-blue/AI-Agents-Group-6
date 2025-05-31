@@ -265,11 +265,17 @@
         }
       ],
       "category_trends_vs_prev_month": {
-        "Household & Services": {
-          "current_spending": -1283.97,
-          "previous_spending": -1062.36,
-          "change_amount": -221.61,
-          "percent_change": "20.9%"
+        "Food & Drinks": {
+          "current_spending": -249.66,
+          "previous_spending": -311.98,
+          "change_amount": 62.32,
+          "percent_change": "-20.0%"
+        },
+        "Shopping": {
+          "current_spending": -1198.26,
+          "previous_spending": -1234.17,
+          "change_amount": 35.91,
+          "percent_change": "-2.9%"
         },
         "Other": {
           "current_spending": -675.21,
@@ -277,23 +283,11 @@
           "change_amount": 563.74,
           "percent_change": "-45.5%"
         },
-        "Food & Drinks": {
-          "current_spending": -249.66,
-          "previous_spending": -311.98,
-          "change_amount": 62.32,
-          "percent_change": "-20.0%"
-        },
         "Transport": {
           "current_spending": -230.34,
           "previous_spending": -640.07,
           "change_amount": 409.73,
           "percent_change": "-64.0%"
-        },
-        "Home Improvements": {
-          "current_spending": -2080.79,
-          "previous_spending": -1776.81,
-          "change_amount": -303.98,
-          "percent_change": "17.1%"
         },
         "Health & Beauty": {
           "current_spending": -544.62,
@@ -307,30 +301,36 @@
           "change_amount": -165.49,
           "percent_change": "18.6%"
         },
-        "Shopping": {
-          "current_spending": -1198.26,
-          "previous_spending": -1234.17,
-          "change_amount": 35.91,
-          "percent_change": "-2.9%"
+        "Home Improvements": {
+          "current_spending": -2080.79,
+          "previous_spending": -1776.81,
+          "change_amount": -303.98,
+          "percent_change": "17.1%"
+        },
+        "Household & Services": {
+          "current_spending": -1283.97,
+          "previous_spending": -1062.36,
+          "change_amount": -221.61,
+          "percent_change": "20.9%"
         }
       },
       "top_transactions_details_for_most_spent_category": {
-        "Transport": [
+        "Home Improvements": [
           {
-            "Source": "Shell",
-            "Amount": -8.57
+            "Source": "JYSK",
+            "Amount": -285.81
           },
           {
-            "Source": "VR",
-            "Amount": -21.98
+            "Source": "IKEA",
+            "Amount": -246.59
           },
           {
-            "Source": "Uber",
-            "Amount": -27.99
+            "Source": "IKEA",
+            "Amount": -244.69
           }
         ]
       },
-      "most_spent_category_excluding_income": "Transport",
+      "most_spent_category_excluding_income": "Home Improvements",
       "id": "4f7a"
     }
   ],

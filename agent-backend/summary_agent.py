@@ -77,13 +77,13 @@ def build_summary_json(month: str) -> Dict[str, Any]:
         # Create a copy of actual to filter out income for this specific calculation
         spending_actual = {k: v for k,v in actual.items() if k.lower() != "income"}
         if spending_actual: # if there are any spending categories left
-            most_spent_category = max(spending_actual, key=spending_actual.get)
+            most_spent_category = max(spending_actual, key=lambda k: abs(spending_actual[k]))
 
             # Get top 3 transactions for the most spent category
             # Ensure transactions have 'Description' and 'Amount', handle missing keys
             most_spent_txns_for_category = sorted(
                 [t for t in txns if t.get("Category") == most_spent_category and t.get("Amount") is not None],
-                key=lambda x: float(x["Amount"]), # Assuming amount can be negative for credits, use abs if only magnitude matters
+                key=lambda x: abs(float(x["Amount"])), # Assuming amount can be negative for credits, use abs if only magnitude matters
                 reverse=True # Largest amounts first
             )[:3]
 
@@ -154,36 +154,64 @@ async def generate_monthly_summary(month: str):
 
         prompt = f"""
         You are **Budgy - the Monthly-Summary Agent**.
-        Your job is to give the user a short, encouraging recap of one month’s spending, highlighting successes and areas for improvement,
-        with actionable advice. Avoid judgmental language. Focus on spending habits and budget adherence.
-        Do not analyze income as an expense.
+Your job is to give the user a short, encouraging recap of one month’s spending, highlighting successes and areas for improvement,
+with actionable advice. Avoid judgmental language. Focus on spending habits and budget adherence.
+Do not analyze income as an expense.
 
-        ──────────────── SYSTEM RULES
-        • Respond in **exactly two parts** - nothing before Part 1 or after Part 2.
-         ─ Part 1 → plain-text narrative (≤ 200 words). Keep it concise and impactful.
-         ─ Part 2 → the *unchanged* JSON you received, wrapped in ```json fences.
-        • Do **NOT** add, remove, or reorder keys in the JSON you return in Part 2.
-        • Numerical facts in Part 1 must match the data provided in the JSON.
+──────────────── SYSTEM RULES
+• Respond in **exactly three parts** - nothing before Part 1 or after Part 3.
+    ─ Part 1 → Plain-text narrative (≤ 30 words). Keep it concise and impactful.
+    ─ Part 2 → Numerical key factors. Answer **only** the specific questions below, strictly following the requested format for each. Do not add introductory phrases.
+    ─ Part 3 → The *unchanged* JSON you received, wrapped in ```json fences.
+• Do **NOT** add, remove, or reorder keys in the JSON you return in Part 3.
+• **CRITICAL**: All bracketed placeholders (e.g., `[value_from_JSON]`) in the formatting instructions below MUST be filled with actual data sourced DIRECTLY from the provided JSON in the CONTEXT section. Perform calculations ONLY AS INSTRUCTED. Apply signs (+/-) for changes EXACTLY as specified in the format.
 
-        ──────────────── WHAT TO COVER IN PART 1
-        1. Briefly state the overall spending situation compared to the budget (e.g., "% over/under budget").
-        2. Identify:
-            a. The category with the **highest total spending**.
-            b. The category that showed the **most significant positive change** (e.g., largest decrease in spending compared to last month
-            from `category_trends_vs_prev_month`, or went significantly under budget based on `pct_vs_budget`). Be specific about which
-            metric you are using.
-            c. The category with the **biggest spending increase** (either as a raw amount or percentage compared to the previous month
-            from `category_trends_vs_prev_month`, or significantly over budget from `pct_vs_budget`). Be specific.
-        3. Mention any **notable or potentially unusual transactions** based on the `potential_unusual_transactions` list
-        or by observing transaction descriptions/amounts in `top_transactions_details` if they stand out (e.g., a very large one-off purchase).
-        Summarize briefly (e.g., "A large purchase of $XXX for YYY was noted in ZZZ category.").
-        4. Specific spending insights on the most spent category (excluding income): "{most_spent_cat_name}".
-           Refer to `top_transactions_details_for_most_spent_category` for details on its largest transactions (Source and Amount):
-        {json.dumps(summary_data.get("top_transactions_details_for_most_spent_category", {}).get(most_spent_cat_name, []), indent=2)}
-            Also, consider its trend using `category_trends_vs_prev_month`.
-            What were the key drivers of spending here?
-        5. Conclude with **one or two practical and specific tips** for next month, directly related to the main areas of overspending
-        or to help manage categories that saw large increases. Suggest concrete actions.
+──────────────── WHAT TO COVER IN PART 1
+1. Briefly state the overall spending situation compared to the budget. For instance, mention if spending was generally over or under budget, or if it significantly exceeded plans. Be encouraging.
+
+──────────────── WHAT TO COVER IN PART 2
+**ATTENTION**: Adhere strictly to the JSON data for all figures and category names.
+'Income' categories are excluded from spending calculations.
+`category_trends_vs_prev_month.change_amount`: positive for spending DECREASE, negative for spending INCREASE.
+`category_trends_vs_prev_month.percent_change`: negative for spending DECREASE, positive for spending INCREASE.
+
+2. Identify:
+    a. How much the user saved or went over budget **in total monetary terms (€)**.
+        Calculation:
+        1. 'Total Actual Spending': Sum `actual_totals` (excluding "Income").
+        2. 'Total Budgeted Spending': Sum `budget_plan` (excluding "Income"; if category unbudgeted, use 0).
+        3. Result: `abs(Total Actual Spending) - Total Budgeted Spending`.
+        Format: "You [saved/went over budget by] [calculated_monetary_value]€."
+
+    b. Progress towards "goals", if any are listed in `goal_progress`.
+        Format: For each goal: "\"[goal_name_from_JSON]\" goal progress: [progress_pct_from_JSON]%." If no goals: "No specific goals tracked this month."
+        (Example structure: **Category**: X%.")
+
+    c. The category with the **highest total spending** (use `most_spent_category_excluding_income` from JSON).
+        Format: "Most spent on: [category_name_from_JSON] [actual_total_amount_from_JSON]€, [pct_vs_budget_value_from_JSON]% [over/under] budget."
+        (Note: For `pct_vs_budget` from JSON, a negative value means OVER budget for an expense. E.g., -308% is 308% OVER budget. Include that knowledge also in the percentage value, show the over budget percent as positive and vice versa.)
+        (Example structure: "Most spent on: **Category** amount€, +X% over/ -X% under budget.")
+
+    d. The category that showed the **most significant positive financial change for you** (largest DECREASE in spending) AND the category that showed the **most significant negative financial change for you** (largest INCREASE in spending). Source from `category_trends_vs_prev_month`.
+        * Largest DECREASE: Find category with largest positive `change_amount`.
+        * Largest INCREASE: Find category with most negative `change_amount` (largest absolute value).
+
+        Format for DECREASE (when JSON `change_amount` is positive, JSON `percent_change` is negative):
+        "Largest decrease: '[category_name_from_JSON]' -[value_of_JSON_change_amount]€ ([value_of_JSON_percent_change]%)."
+
+        Format for INCREASE (when JSON `change_amount` is negative, JSON `percent_change` is positive):
+        "Largest increase: '[category_name_from_JSON]' +[absolute_value_of_JSON_change_amount]€ (+[value_of_JSON_percent_change]%)."
+
+        If no significant changes, don't answer that part
+
+    e. The **single largest transaction by ABSOLUTE amount** from `top_transactions_details_for_most_spent_category` for the category identified in 2c.
+        Format: "Largest transaction in [category_from_2c]: [Source_from_JSON_for_largest_txn] ([Amount_from_JSON_for_largest_txn]€)."
+        (CRITICAL REMINDER: You MUST identify the transaction with the highest absolute monetary value from the list for that category, not just the first one.)
+        (Example structure: "Largest transaction in **Category**: **Source** amount€.")
+
+    f. Conclude with **one practical and specific tip** for next month, related to overspending (2c) or largest increase (2d).
+        Format: "Tip for next month: **Your_actionable_tip_here**."
+
         ──────────────── CONTEXT
         Current date : {CURRENT_DATE:%Y-%m-%d}
         Monthly financial data (Note: 'Income' in actual_totals or budget_plan should be treated as income, not an expense category for spending analysis):
