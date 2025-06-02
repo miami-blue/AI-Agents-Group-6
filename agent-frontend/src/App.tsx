@@ -13,6 +13,7 @@ const App = () => {
             <h1>Welcome back Bob! </h1>
             <Dashboard />
             <Chat />
+
             <Summary />
           </div>
         </div>

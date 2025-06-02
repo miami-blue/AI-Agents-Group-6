@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './monthlyBudgetCard.css'; // for styling
+import { useDataContext } from '../../api/DataContext';
 
 type MonthlyBudgetCardProps = {
-  budgetLimit: number;
-  expensesTotal: number;
-  daysLeft?: number; // optional for flexibility
+
 };
 
-const MonthlyBudgetCard: React.FC<MonthlyBudgetCardProps> = ({
-  budgetLimit,
-  expensesTotal,
-  daysLeft = 30, // fallback
-}) => {
-  const progress = (expensesTotal / budgetLimit) * 100;
-  const remainingBudget = budgetLimit - expensesTotal;
+const MonthlyBudgetCard= () => {
+const [selectedMonth, setSelectedMonth] = useState('06')
+
+  const {budgetsResponse} = useDataContext()
+  
+  const budget = budgetsResponse.data.filter(item => !!item.Month && item.Month === `2025-${selectedMonth}`)
+  
+  const expenses = 0
+  const budgetedExpenses = budget.filter(item => item.Category !== 'Income')
+  const income = (budget.find(item => item.Category === 'Income')?.Amount as number) || 0
+
+  const budgetedTotal = budgetedExpenses.reduce((sum, item) => {
+    const amount = parseFloat(item.Amount);
+    return sum + (isNaN(amount) ? 0 : amount);
+  }, 0);
+
+  const daysLeft = 27
+
+
+  const progress = budgetedTotal > 0 ? (expenses / budgetedTotal) * 100 : 0
+  const remainingBudget = budgetedTotal - expenses;
   const dailyBudget =
     daysLeft > 0 ? (remainingBudget / daysLeft).toFixed(2) : '0.00';
 
@@ -22,7 +35,7 @@ const MonthlyBudgetCard: React.FC<MonthlyBudgetCardProps> = ({
       <div className="card-header">
         <h2>Monthly Budget </h2>
         <span className="budget-tag">
-          €{expensesTotal} /{budgetLimit}
+          {expenses} / {budgetedTotal} €
         </span>
       </div>
 
@@ -34,7 +47,7 @@ const MonthlyBudgetCard: React.FC<MonthlyBudgetCardProps> = ({
         You can spend<strong>€{dailyBudget} </strong>/day for {daysLeft} days
       </p>
 
-      <button className="wrap-up-button">📊 View April Wrap Up</button>
+      
     </div>
   );
 };

@@ -16,7 +16,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 # Simulated current date
-CURRENT_DATE = datetime(2024, 5, 10)  # Example: May 4, 2024
+CURRENT_DATE = datetime(2025, 5, 31)  # Example: May 4, 2024
 
 message_history = []
 
@@ -33,6 +33,7 @@ async def handle_budget_agent_prompt(input: str):
             message_history.append(welcome_message)
             return {"content": welcome_message["content"]}
 
+        print(f"💬 User input: {input}")
         message_history.append({
             "role": "user",
             "content": input
@@ -51,34 +52,39 @@ async def handle_budget_agent_prompt(input: str):
                 {"Category": "Leisure", "Amount": 100.0}
             ]
 }
+        available_tool_names = ["get_transactions_in_range", "get_goals", "get_budget", "load_budgets", "save_budget"]
+        available_tools = [tool for tool in tool_definitions if tool["tool_name"] in available_tool_names]
 
         prompt = f"""
         You are Budgy, an AI Agent that helps users to set a realistic financial budget for the upcoming month based on their past transactions and spending history.
-        You should make decisions based on the user's transaction history, user's question, conversation history, and the tools available to you.
-        You should start forming a budget straight away and guide the user through the process. You should always back your decisions with data from the user's transaction history.
+        You should make decisions based on the user's transaction history, saved goals, user's question, conversation history, and the tools available to you.
+        You should start forming a budget straight away and guide the user through the process. You should always back your decisions with data from the user's transaction history. You should take into consideration the monthly amount of goals.
         Do not ask the user for information that you can get from the tools available to you.
         You should always leave the user with a question or query yourself again to keep the conversation going.
 
         Current date: {CURRENT_DATE.strftime('%Y-%m-%d')}
         User's question: {input}
         Previous messages: {json.dumps(message_history)}
-        Available tools: {json.dumps(tool_definitions)}
+        Available tools: {available_tools}
         Example response of tool usage: USE_TOOL:::get_transactions_in_range:::{json.dumps(example_tool_params)}
         Example response of tool usage: USE_TOOL:::save_budget:::{json.dumps(example_budget_params)}
         
         You should make a decision if you need to use a tool to answer the user's question. If you need a tool, don not answer the user until you no longer need tools in your response. Do not attempt to use a tool unless you have all required parameters. Partial tool calls are not allowed.
 
         Any response must strictly follow one of the following three formats. Do not include extra text outside the format.
+        Never use ``` in your response to mark the start or end of JSON.
 
         Formats:
-        1. If you need more information from the user, return the response in the following format: REQUEST_INFORMATION:::question
+        1. If you need more information from the user, return the response in the following format: REQUEST_INFORMATION:::answer (Answer must contain the complete response to user as a string)
         2. If you want to use a tool, return the response in the following format: USE_TOOL:::tool_name:::parameters (parameters must be valid JSON)
-        3. If you want to answer the user directly, return the response in the following format: ANSWER:::answer
+        3. If you want to answer the user directly, return the response in the following format: ANSWER:::answer (Answer must contain the complete response to user as a string)
         """
 
         agent_response = client.models.generate_content(
             model="gemini-2.0-flash", contents=prompt
         )
+
+        print(f"🔮 Reasoning: {agent_response.text}")
 
         message_history.append({
             "role": "system",
@@ -101,6 +107,8 @@ async def handle_budget_agent_prompt(input: str):
                 "content": tool_response
             })
 
+            print(f"🔮 Tool response: {tool_response}")
+
             tool_used_prompt = f"""
             You are Budgy, an AI Agent that helps users to set a realistic financial budget for the upcoming month.
             You have used a tool to gather information about the user's financial situation. Now, you should provide a final answer to the user based on the tool's response and your previous reasoning.
@@ -111,7 +119,7 @@ async def handle_budget_agent_prompt(input: str):
             Here is the tool response: {tool_response}
             Here are the previous messages: {json.dumps(message_history)}
 
-            Available tools: {json.dumps(tool_definitions)}
+            Available tools: {available_tools}
             If you need to use another tool to be able to answer the user's question, you should format the response as follows: USE_TOOL:::tool_name:::parameters
 
             In other case, you are responding directly to the user, so provide a clear and concise answer.
@@ -127,6 +135,7 @@ async def handle_budget_agent_prompt(input: str):
             tool_used_explanation = client.models.generate_content(
                 model="gemini-2.0-flash", contents=tool_used_prompt
             )
+            print(f"🔮 Tool used explanation: {tool_used_explanation.text}")
 
             message_history.append({
                 "role": "system",

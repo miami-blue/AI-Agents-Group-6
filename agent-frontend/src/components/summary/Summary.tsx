@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { generateMonthlySummary } from '../../api/endpoints';
+import './summary.css';
 
 const Summary = () => {
   const [responseLoading, setResponseLoading] = useState(false);
@@ -21,25 +22,31 @@ const Summary = () => {
 
   useEffect(() => {
     if (!month || month.length !== 7) {
-        return;
-      }
-    handleGenerateSummary(month)
-  }, [month])
+      return;
+    }
+    handleGenerateSummary(month);
+  }, [month]);
 
   if (responseLoading) {
     return <div>Generating monthly summary...</div>;
   }
   return (
-    <div style={{padding: 16}}>
+    <div className="summary-container">
       {responseLoading ? (
         <div>Generating monthly summary...</div>
       ) : (
         <div>
-          <div>Month: {month}</div>
+           <button className="wrap-up-button" onClick={() => {setMonth('2025-05')}}>📊 View May Wrap Up</button>
+          {/* <div>Month: {month}</div>
           <input onChange={(e) => setInput(e.target.value)}></input>
-          <button onClick={() => setMonth(input)}>Generate summary</button>
+          <button onClick={() => setMonth(input)}>Generate summary</button> */}
 
-          <div>{JSON.stringify(summary)}</div>
+          {Object.entries(summary).length > 0 && (
+            <div>
+              <div>{summary.explanation}</div>
+              </div>
+          )}
+          {/* <div>{JSON.stringify(summary)}</div> */}
         </div>
       )}
     </div>

@@ -52,8 +52,32 @@ tool_definitions = [
         }
     },
     {
+        "tool_name": "get_budget",
+        "description": "Get user's budget for a specified month.",
+        "parameters": {
+            "month": "string (YYYY-MM)"
+        },
+        "expected_output": [{
+            "Month": "string (YYYY-MM)",
+            "Category": "string",
+            "Amount": "float",
+            "id": "string"
+        }]
+    },
+    {
+        "tool_name": "load_budgets",
+        "description": "Get user's saved budgets. You can use this information to assess user's income and expenses.",
+        "parameters": None,
+        "expected_output": [{
+            "Month": "string (YYYY-MM)",
+            "Category": "string",
+            "Amount": "float",
+            "id": "string"
+        }]
+    },
+    {
         "tool_name": "save_goal",
-        "description": "Saves a new financial goal for a user, and returns the saved goal. You should only use this tool when you have all the information needed to save a goal and think that the user can realistically save the desired amount. If the user wants to edit an existing goal, you should first delete the existing goal using the delete_goal tool, and then save the new goal with this tool.",
+        "description": "Saves a new financial goal for a user, and returns the saved goal. ONLY USE THIS TOOL AFTER CONFIRMING THE FEASIBILITY OF THE GOAL!!. If the user wants to edit an existing goal, you should first delete the existing goal using the delete_goal tool, and then save the new goal with this tool.",
         "parameters": {
             "goal_name": "string", 
             "target_amount": "float",
@@ -108,20 +132,34 @@ async def handle_tool_usage(response: str):
             raise ValueError("Invalid tool usage response format")
         tool_name_and_params = response_parts[1]
         tool_name, parameters = tool_name_and_params.split(":::", 1)
-        parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
+        
+        # Remove any triple backticks from parameters that LLM sometimes adds
+        parameters = parameters.replace("```", "")
 
         # Dynamically call the corresponding tool function
         if tool_name == "save_goal":
+            parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
             validated_params = SaveGoalParams(**parameters)
             result = save_goal(validated_params)  # Call the save_goal function with validated parameters
         elif tool_name == "get_goals":
             result = get_goals()
         elif tool_name == "delete_goal":
+            parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
             validated_params = DeleteGoalParams(**parameters)  # Validate parameters using Pydantic
             result = delete_goal(validated_params)  # Call the delete_goal function with validated parameters
+        elif tool_name == "load_summaries":
+            result = load_summaries()
+        elif tool_name == "load_budgets":
+            result = load_budgets()
+        elif tool_name == "get_budget":
+            parameters = json.loads(parameters)  # Convert parameters from JSON string to dictionary
+            validated_params = GetBudgetParams(**parameters)
+            result = get_budget(validated_params)
         elif tool_name == "get_transactions_in_range":
+            parameters = json.loads(parameters)
             result = get_transactions_in_range(parameters)
         elif tool_name == "save_budget":
+            parameters = json.loads(parameters)
             result = save_budget(parameters)
         else:
             return f"Unknown tool: {tool_name}"
@@ -306,28 +344,33 @@ def load_budgets():
         print(f"Error fetching budgets: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch budgets from the /budgets endpoint.")
 
-def get_budget(month: str) -> Dict[str, float]:
+class GetBudgetParams(BaseModel):
+    month: str
+def get_budget(params: GetBudgetParams) -> Dict[str, float]:
     """Budget already saved by your Budget Agent."""
     try:
         # Load all budgets
         budgets = load_budgets()
 
-        # detect flat rows: they have a "Month" key
-        if budgets and "Month" in budgets[0]:
-            return {
-                row["Category"]: row["Amount"]
-                for row in budgets
-                if row["Month"] == month
-            }
-
-        # otherwise fall back to the nested structure
-        for b in budgets:
-            if b.get("month") == month:
-                return b.get("categories", {})
-        return {}
+        return {
+            row["Category"]: row["Amount"]
+            for row in budgets
+            if row["Month"] == params.month
+        }
     except Exception as e:
         print(f"Error processing budgets: {e}")
         raise HTTPException(status_code=500, detail="Failed to process budgets.")
+
+def load_summaries():
+    """Fetch all summaries already saved by the Summary Agent."""
+    try:
+        # Call the FastAPI endpoint
+        response = requests.get(JSON_SERVER_URL + "/summaries")
+        response.raise_for_status()  # Raise an error for HTTP errors
+        return response.json()  # Return the JSON response as a Python list
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching summaries: {e}")
+        raise HTTPException(status_code=500, detail="Failed to fetch summaries from the /summaries endpoint.")        
 
 
 

@@ -45,7 +45,6 @@
 
 .chat-flow-container {
   height: 100%;
-  overflow: hidden;
   z-index: 1000;
   background-color: #f1f2f4;
 }
@@ -102,6 +101,17 @@
   background-color: white;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.buttons-container.tabs {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
 }
 
 .small-button {
