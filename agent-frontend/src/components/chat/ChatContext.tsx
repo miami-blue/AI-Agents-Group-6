@@ -8,8 +8,10 @@ interface Message {
 
 // Define the context value type
 interface ChatContextType {
-  messageHistory: Message[];
-  addMessage: (message: Message) => void;
+  goalAgentMessageHistory: Message[];
+  addGoalAgentMessage: (message: Message) => void;
+  budgetAgentMessageHistory: Message[];
+  addBudgetAgentMessage: (message: Message) => void;
   clearHistory: () => void;
 }
 
@@ -18,20 +20,25 @@ const ChatContext = createContext<ChatContextType | undefined>(undefined);
 
 // Provider component
 export const ChatProvider = ({ children }: { children: React.ReactNode }) => {
-  const [messageHistory, setMessageHistory] = useState<Message[]>([]);
+  const [goalAgentMessageHistory, setGoalAgentMessageHistory] = useState<Message[]>([]);
+  const [budgetAgentMessageHistory, setBudgetAgentMessageHistory] = useState<Message[]>([]);
 
-  // Function to add a message to the history
-  const addMessage = (message: Message) => {
-    setMessageHistory((prev) => [...prev, message]);
+  // Functions to add a message to the history
+  const addGoalAgentMessage = (message: Message) => {
+    setGoalAgentMessageHistory((prev) => [...prev, message]);
+  };
+  const addBudgetAgentMessage = (message: Message) => {
+    setBudgetAgentMessageHistory((prev) => [...prev, message]);
   };
 
   // Function to clear the message history
   const clearHistory = () => {
-    setMessageHistory([]);
+    setGoalAgentMessageHistory([]);
+    setBudgetAgentMessageHistory([]);
   };
 
   return (
-    <ChatContext.Provider value={{ messageHistory, addMessage, clearHistory }}>
+    <ChatContext.Provider value={{ goalAgentMessageHistory, addGoalAgentMessage, budgetAgentMessageHistory, addBudgetAgentMessage, clearHistory }}>
       {children}
     </ChatContext.Provider>
   );

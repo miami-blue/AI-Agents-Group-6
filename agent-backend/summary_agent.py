@@ -4,9 +4,9 @@ from typing import List, Optional, Dict, Any
 from datetime import datetime, timedelta
 import json, re
 from llm_config import get_llm_response
-from tools import get_budget, get_transactions, gather_goal_progress, save_summary
+from tools import get_budget, get_transactions, gather_goal_progress, save_summary, GetBudgetParams
 
-CURRENT_DATE = datetime(2025, 5, 12)
+CURRENT_DATE = datetime(2025, 5, 31)
 #OUTLINE_RE = re.compile(r"^\s*1\.\s")
 
 
@@ -32,7 +32,8 @@ def budget_vs_actual(actual: Dict[str, float], plan: Dict[str, float]) -> Dict[s
 def build_summary_json(month: str) -> Dict[str, Any]:
     txns = get_transactions(month)
     actual = total_by_category(txns)
-    plan   = get_budget(month)
+    
+    plan   = get_budget(GetBudgetParams(month=month))
     deltas = budget_vs_actual(actual, plan)
 
     print("txns", txns)
@@ -140,6 +141,7 @@ class ChatMessage(BaseModel):
 
 async def generate_monthly_summary(month: str):
     try:
+        print(month)
         # default month = previous full month
         month = month or _month_str(CURRENT_DATE.replace(day=1) - timedelta(days=1))
         summary_data = build_summary_json(month)

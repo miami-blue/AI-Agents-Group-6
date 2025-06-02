@@ -24,7 +24,8 @@ function Dashboard() {
         />
       </div>
       <BudgetPie />
-      <MonthlyBudgetCard budgetLimit={1700} expensesTotal={400} />
+
+      <MonthlyBudgetCard  />
     </div>
   );
 }

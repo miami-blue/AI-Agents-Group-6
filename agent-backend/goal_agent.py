@@ -16,7 +16,7 @@ if not api_key:
 client = genai.Client(api_key=api_key)
 
 # Simulated current date
-CURRENT_DATE = datetime(2025, 5, 10)  # Example: May 4, 2024
+CURRENT_DATE = datetime(2025, 5, 31)  # Example: May 4, 2025
 
 message_history = []
 
@@ -46,12 +46,16 @@ async def handle_goal_agent_prompt(input: str):
             "due_date": "2026-11-30"
             }
 
+
+        available_tool_names = ["get_goals", "load_budgets", "save_goal", "delete_goal"]
+        available_tools = [tool for tool in tool_definitions if tool["tool_name"] in available_tool_names]
+
         prompt = f"""
-        You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes. You should be helpful but realistic, taking the role of a financial coach.
+        You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes. You should be helpful and motivating, but stay realistic. Take the role of a financial coach and have a discussion with the user.
 
         ## OBJECTIVE
         Assess the feasibility of the user's wish before saving it as a goal. You may:
-        - Use tools to gather the user's financial situation (e.g. existing goals)
+        - Use tools to gather the user's financial situation (e.g. existing goals and budgets). Always use tool before asking a user for details, if sensible.
         - Ask the user for more information if it's not accessible via tools.
         - Suggest alternative or more realistic goals if needed.
 
@@ -63,7 +67,9 @@ async def handle_goal_agent_prompt(input: str):
         User input: {input}
         Current date: {CURRENT_DATE.strftime('%Y-%m-%d')}
         Previous messages: {json.dumps(message_history)}
-        Available tools: {json.dumps(tool_definitions)}
+
+        ## DESCRIPTIONS OF THE AVAILABLE TOOLS IS IMPORTANT.
+        Available tools: {json.dumps(available_tools)}
 
         ## TOOL USAGE RULES
         - Only use tools listed in Available tools.
@@ -139,26 +145,56 @@ async def handle_goal_agent_prompt(input: str):
             agent_reasoning = f"Agent reasoning: {agent_response.text} - Tool response: {tool_response}"
 
             tool_used_prompt = f"""
-            You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes.
-            You have used a tool to gather information about the user's financial situation. Now, you should provide a final answer to the user based on the tool's response and your previous reasoning.
-            The response should explain the reasoning behind the tool usage and how it relates to the user's question.
+            You are Budgy, an AI Agent that helps users to set a realistic financial goal based on their wishes. You should be helpful and motivating, but stay realistic. Take the role of a financial coach and have a discussion with the user.
 
+            You have used a tool, and now you should provide a final answer to the user based on the tool's response and your previous reasoning.
+            The response should explain the reasoning behind the tool usage and how it relates to the user's question. Here's more information:
+
+            ## OBJECTIVE
+            Assess the feasibility of the user's wish before saving it as a goal. You may:
+            - Use tools to gather the user's financial situation (e.g. existing goals and budgets)
+            - Ask the user for more information if it's not accessible via tools.
+            - Suggest alternative or more realistic goals if needed.
+
+            ONLY SAVE THE GOAL AFTER YOU HAVE ALL INFORMATION AND HAVE CONFIRMED THAT THE USER CAN REALISTICALLY SAVE THE DESIRED AMOUNT.
+            A user can be considered able to realistically save if their expected monthly savings exceed or match the goals required monthly contribution, after accounting for other ongoing goals.
+            IF YOU WANT TO SUGGEST A MODIFIED OR ALTERNATIVE GOAL, ALWAYS CONFIRM WITH THE USER BEFORE SAVING IT.
+
+            ## CONTEXT
             Current date: {CURRENT_DATE.strftime('%Y-%m-%d')}
             This was the user's question: {input}
-            Here is your reasoning: {agent_response.text}
-            Here is the tool response: {tool_response}
-            Here are the previous messages: {json.dumps(message_history)}
-            
-            Available tools: {json.dumps(tool_definitions)}
-            If you need to use another tool to be able to answer the user's question, you should format the response as follows: USE_TOOL:::tool_name:::parameters
+            Your reasoning for using the tool: {agent_response.text}
+            Tool response: {tool_response}
+            Previous messages: {json.dumps(message_history)}
+            Available tools: {json.dumps(available_tools)}
 
-            In other case, you are responding directly to the user, so provide a clear and concise answer.
+            ## TOOL USAGE RULES
+            - Only use tools listed in Available tools.
+            - Tool calls must include ALL required parameters in JSON format.
+            - Partial tool calls are not allowed. If you do not have all required parameters, you should use another tool to gather the missing information or request more information from the user. If you cannot obtain required data from tools, ask the user directly instead of guessing.
+            - If a task requires multiple tools, you should start with the first required tool call, and explain in your reasoning what steps follow. Only the first tool will be executed immediately.
+
+            ## RESPONSE FORMAT
+            - You are responding directly to the user, unless you need to use another tool.
+            - If you are using a tool and need to add reasoning that the AI Agent in next step should use, always add it before the format starts.
+            - Do not add reasoning if you are not using another tool.
+            
+            1. If you need to use another tool to be able to answer the user's question, return the response in the following format: reasoning USE_TOOL:::tool_name:::parameters
+            2. In other case, you are responding directly to the user, so provide a clear and concise answer.
 
             Example responses:
-            User's question: I want to delete my goal with ID 1234.
-            Your response: Based on your request, I successfully deleted the goal with ID 1234.
 
-            User's question: I want to delete my goal to save for a new car.
+            User's question: What goals do I have?
+            Your reasoning for using the tool: Okay, I can help with that! I will retrieve your current goals so we can review them together. USE_TOOL:::get_goals:::{{}}
+            Your response: Okay, I have retrieved your current financial goals. You have one goal saved: a down payment for an apartment. The details are as follows:
+            Goal Name: Apartment Downpayment
+            Target Amount: $20,000
+            Monthly Amount: $555.56
+            Due Date: 2028-05-31
+            I used the get_goals tool to retrieve this information from your saved data. Is there anything else I can help you with regarding this goal, or perhaps with setting new goals?
+
+            User's question: Delete the goal "Apartment downpayment"
+            Your reasoning for using the tool: Okay, I need to first find existing goals using the get_goals tool, and then call the tool delete_goal with the id of the goal I found. USE_TOOL:::get_goals:::{{}}
             Your response: User wanted to delete a goal, but did not provide the ID. I first used the get_goals tool to find the goal by its name. I found this goal:{{"id": "1234", "goal_name": "New Car", "target_amount": 10000, "monthly_amount": 303.03, "due_date":"2027-12-01"}}. Now I know the ID, so I should delete this goal using the tool delete_goal.USE_TOOL:::delete_goal:::{{"id": "1234"}}
             """
 

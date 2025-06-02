@@ -1,5 +1,6 @@
 import { createContext, useContext, type ReactNode } from 'react';
 import { useFetchGoals } from './useFetchGoals';
+import { useFetchBudgets } from './useFetchBudgets';
 
 export interface DataFetchResponse<T> {
   data: T;
@@ -10,6 +11,7 @@ export interface DataFetchResponse<T> {
 
 interface DataContextType {
   goalsResponse: DataFetchResponse<Record<string, any>[]>;
+  budgetsResponse: DataFetchResponse<Record<string, any>[]>;
 }
 
 // Create the context
@@ -20,9 +22,10 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const goalsResponse = useFetchGoals();
+  const budgetsResponse = useFetchBudgets();
 
   return (
-    <DataContext.Provider value={{ goalsResponse }}>
+    <DataContext.Provider value={{ goalsResponse, budgetsResponse }}>
       {children}
     </DataContext.Provider>
   );
